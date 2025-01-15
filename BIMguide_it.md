@@ -1,21 +1,3 @@
-# Premessa
-
-Il presente documento ha come obiettivo la condivisione delle procedure e delle metodologie BIM che dovranno essere implementate al fine di gestire digitalmente l'intero ciclo di vita degli immobili sotto la responsabilità dell'ufficio tecnico dell'Università degli studi di Firenze, favorendo ed ottimizzando la collaborazione tra tutti i professionisti e stakeholders coinvolti. A tal fine l'Ateneo ha avviato l'adozione di un processo di gestione informativa aderente alle prescrizioni normative italiane ed internazionali (UNI EN ISO 19650, UNI EN 17412, UNI 11337) anche attraverso l'utilizzo della metodologia OpenBIM, con l'obiettivo della creazione di un "Patrimonio Digitale" costituito dall'insieme dei modelli e delle informazioni relative agli immobili gestiti a sostegno delle attività principali dell'Ente.
-
-Le seguenti Linee Guida sono organizzate in **4 sezioni principali** come segue:
-
-- **Sezione Generale**, nella quale sono riportate indicazioni di carattere generico sullo sviluppo del progetto;
-- **Riferimenti Normativi**, nella quale sono indicate le norme cogenti e volontarie da applicarsi nello sviluppo del progetto BIM;
-- **Sezione Tecnica**, in cui vengono rese esplicitate convenzioni e buone prassi da seguire per la modellazione BIM tramite il software di BIM authoring Autodesk Revit. Si riportano osservazioni su i sistemi di coordinate comuni, modalità di scambio dati ed accorgimenti per la redazione di elaborati grafici;
-- **Sezione Gestionale**, che delinea obiettivi e utilizzi del BIM, definisce le origine per la produzione degli elaborati di progetto, esplicita regole di coordinamento tra le varie discipline, ruoli e responsabilità;
-- **Allegati** richiamati nel testo del documento ed elencati in maniera esaustiva in calce allo stesso, sono parte integrante delle presenti Linee Guida.
-
-## Contatti
-
-Ing. Andrea Bongini - <andrea.bongini@unifi.it>
-
-Prof. Ing. Carlo Biagini - <carlo.biagini@unifi.it>
-
 # Index
 
 - [Sezione Generale](#sezione-generale)
