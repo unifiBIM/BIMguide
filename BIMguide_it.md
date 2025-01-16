@@ -1,71 +1,71 @@
 # Index
-
 - [Sezione Generale](#sezione-generale)
-  - [1.1 Scopo del documento](#1.1-scopo-del-documento)
-  - [1.2 Note introduttive di carattere generale](#1.2-note-introduttive-di-carattere-generale)
-  - [1.3 Acronimi e glossario](#1.3-acronimi-e-glossario)
-  - [1.4 Riferimenti normativi](#1.4-riferimenti-normativi)
+   * [1.1 Scopo del documento](#11-scopo-del-documento)
+   * [1.2 Note introduttive di carattere generale](#12-note-introduttive-di-carattere-generale)
+   * [1.3 Acronimi e glossario](#13-acronimi-e-glossario)
+   * [1.4 Riferimenti normativi](#14-riferimenti-normativi)
 - [Sezione Tecnica](#sezione-tecnica)
-  - [2.1 Strutturazione e organizzazione dei processi di modellazione digitale](#2.1-strutturazione-e-organizzazione-dei-processi-di-modellazione-digitale)
-    - [2.1.1 Denominazione e codifica modelli, nuvole di punti, elaborati grafici e documentali](#2.1.1-denominazione-e-codifica-modelli,-nuvole-di-punti,-elaborati-grafici-e-documentali)
-    - [2.1.2 Dimensione massima dei file di modellazione](#2.1.2-dimensione-massima-dei-file-di-modellazione)
-    - [2.1.3 Codifica degli elementi](#2.1.3-codifica-degli-elementi)
-    - [2.1.4 Indicazioni WBS di progetto](#2.1.4-indicazioni-wbs-di-progetto)
-    - [2.1.5 Indicazione delle fasi di progetto](#2.1.5-indicazione-delle-fasi-di-progetto)
-    - [2.1.6 Altre codifiche e standard da utilizzare](#2.1.6-altre-codifiche-e-standard-da-utilizzare)
-  - [2.2 Sistema di coordinate e specifiche di riferimento](#2.2-sistema-di-coordinate-e-specifiche-di-riferimento)
-    - [2.2.1 Coordinate condivise](#2.2.1-coordinate-condivise)
-    - [2.2.2 Template di modello](#2.2.2-template-di-modello)
-  - [2.3 Convenzione per la nomenclatura delle viste all'interno dei software commerciali](#2.3-convenzione-per-la-nomenclatura-delle-viste-all'interno-dei-software-commerciali)
-  - [2.4 Convenzione per l'ordinamento del browser di progetto all'interno dei software commerciali](#2.4-convenzione-per-l'ordinamento-del-browser-di-progetto-all'interno-dei-software-commerciali)
-  - [2.5 Impostazione del progetto e regole di modellazione](#2.5-impostazione-del-progetto-e-regole-di-modellazione)
-    - [2.5.1 Definizione dell'area di lavoro](#2.5.1-definizione-dell'area-di-lavoro)
-    - [2.5.2 Sistema di riferimento per l'impostazione del lavoro](#2.5.2-sistema-di-riferimento-per-l'impostazione-del-lavoro)
-    - [2.5.3 Georeferenziazione del modello](#2.5.3-georeferenziazione-del-modello)
-    - [2.5.4 Coordinamento con un modello di riferimento (master)](#2.5.4-coordinamento-con-un-modello-di-riferimento-(master))
-    - [2.5.5 Collegamenti di file CAD](#2.5.5-collegamenti-di-file-cad)
-    - [2.5.6 Suggerimenti per la realizzazione di una superficie topografica (terreno)](#2.5.6-suggerimenti-per-la-realizzazione-di-una-superficie-topografica-(terreno))
-    - [2.5.7 Creazione di modelli di vista](#2.5.7-creazione-di-modelli-di-vista)
-    - [2.5.8 Sistema di annotazione](#2.5.8-sistema-di-annotazione)
-    - [2.5.9 Annotazioni per le revisioni](#2.5.9-annotazioni-per-le-revisioni)
-    - [2.5.10 Spessori e tipi di linee](#2.5.10-spessori-e-tipi-di-linee)
-    - [2.5.11 Stili di linee](#2.5.11-stili-di-linee)
-    - [2.5.12 Stili di quote](#2.5.12-stili-di-quote)
-    - [2.5.13 Tipi di testo](#2.5.13-tipi-di-testo)
-    - [2.5.14 Tipi di campiture](#2.5.14-tipi-di-campiture)
-    - [2.5.15 Tipi di contrassegno](#2.5.15-tipi-di-contrassegno)
-    - [2.5.16 Simboli di vista](#2.5.16-simboli-di-vista)
-    - [2.5.17 Altri simboli](#2.5.17-altri-simboli)
-  - [2.6 Specifica per l'inserimento di oggetti](#2.6-specifica-per-l'inserimento-di-oggetti)
-  - [2.7 Altri suggerimenti per l’ottimizzazione del processo](#2.7-altri-suggerimenti-per-l’ottimizzazione-del-processo)
-  - [2.8 Principi generali di lavoro collaborativo](#2.8-principi-generali-di-lavoro-collaborativo)
-  - [2.9 Standard grafici per la produzione degli elaborati](#2.9-standard-grafici-per-la-produzione-degli-elaborati)
-  - [2.10 Integrazione con altri software](#2.10-integrazione-con-altri-software)
-    - [2.10.1 Droots One](#2.10.1-droots-one)
-    - [2.10.2 pyRevit (by Ehsan Iran-Nejad)](#2.10.2-pyrevit-(by-ehsan-iran-nejad))
-    - [2.10.3 Isolate Warnings (by Archisoft)](#2.10.3-isolate-warnings-(by-archisoft))
-    - [2.10.4 Color Splasher (by BIM One)](#2.10.4-color-splasher-(by-bim-one))
-    - [2.10.5 BIM Interoperability Tool](#2.10.5-bim-interoperability-tool)
-    - [2.10.6 Site Design](#2.10.6-site-design)
+   * [2.1 Strutturazione e organizzazione dei processi di modellazione digitale](#21-strutturazione-e-organizzazione-dei-processi-di-modellazione-digitale)
+      + [2.1.1 Denominazione e codifica modelli, nuvole di punti, elaborati grafici e documentali](#211-denominazione-e-codifica-modelli-nuvole-di-punti-elaborati-grafici-e-documentali)
+      + [2.1.2 Dimensione massima dei file di modellazione](#212-dimensione-massima-dei-file-di-modellazione)
+      + [2.1.3 Codifica degli elementi](#213-codifica-degli-elementi)
+      + [2.1.4 Indicazioni WBS di progetto](#214-indicazioni-wbs-di-progetto)
+      + [2.1.5 Indicazione delle fasi di progetto](#215-indicazione-delle-fasi-di-progetto)
+      + [2.1.6 Altre codifiche e standard da utilizzare](#216-altre-codifiche-e-standard-da-utilizzare)
+   * [2.2 Sistema di coordinate e specifiche di riferimento](#22-sistema-di-coordinate-e-specifiche-di-riferimento)
+      + [2.2.1 Coordinate condivise](#221-coordinate-condivise)
+      + [2.2.2 Template di modello](#222-template-di-modello)
+   * [2.3 Convenzione per la nomenclatura delle viste all'interno dei software commerciali](#23-convenzione-per-la-nomenclatura-delle-viste-allinterno-dei-software-commerciali)
+   * [2.4 Convenzione per l'ordinamento del browser di progetto all'interno dei software commerciali](#24-convenzione-per-lordinamento-del-browser-di-progetto-allinterno-dei-software-commerciali)
+   * [2.5 Impostazione del progetto e regole di modellazione](#25-impostazione-del-progetto-e-regole-di-modellazione)
+      + [2.5.1 Definizione dell'area di lavoro](#251-definizione-dellarea-di-lavoro)
+      + [2.5.2 Sistema di riferimento per l'impostazione del lavoro](#252-sistema-di-riferimento-per-limpostazione-del-lavoro)
+      + [2.5.3 Georeferenziazione del modello](#253-georeferenziazione-del-modello)
+      + [2.5.4 Coordinamento con un modello di riferimento (master)](#254-coordinamento-con-un-modello-di-riferimento-master)
+      + [2.5.5 Collegamenti di file CAD](#255-collegamenti-di-file-cad)
+      + [2.5.6 Suggerimenti per la realizzazione di una superficie topografica (terreno)](#256-suggerimenti-per-la-realizzazione-di-una-superficie-topografica-terreno)
+      + [2.5.7 Creazione di modelli di vista](#257-creazione-di-modelli-di-vista)
+      + [2.5.8 Sistema di annotazione](#258-sistema-di-annotazione)
+      + [2.5.9 Annotazioni per le revisioni](#259-annotazioni-per-le-revisioni)
+      + [2.5.10 Spessori e tipi di linee](#2510-spessori-e-tipi-di-linee)
+      + [2.5.11 Stili di linee](#2511-stili-di-linee)
+      + [2.5.12 Stili di quote](#2512-stili-di-quote)
+      + [2.5.13 Tipi di testo](#2513-tipi-di-testo)
+      + [2.5.14 Tipi di campiture](#2514-tipi-di-campiture)
+      + [2.5.15 Tipi di contrassegno](#2515-tipi-di-contrassegno)
+      + [2.5.16 Simboli di vista](#2516-simboli-di-vista)
+      + [2.5.17 Altri simboli](#2517-altri-simboli)
+   * [2.6 Specifica per l'inserimento di oggetti](#26-specifica-per-linserimento-di-oggetti)
+   * [2.7 Altri suggerimenti per l’ottimizzazione del processo](#27-altri-suggerimenti-per-lottimizzazione-del-processo)
+   * [2.8 Principi generali di lavoro collaborativo](#28-principi-generali-di-lavoro-collaborativo)
+   * [2.9 Standard grafici per la produzione degli elaborati](#29-standard-grafici-per-la-produzione-degli-elaborati)
+   * [2.10 Integrazione con altri software](#210-integrazione-con-altri-software)
+      + [2.10.1 Droots One](#2101-droots-one)
+      + [2.10.2 pyRevit (by Ehsan Iran-Nejad)](#2102-pyrevit-by-ehsan-iran-nejad)
+      + [2.10.3 Isolate Warnings (by Archisoft)](#2103-isolate-warnings-by-archisoft)
+      + [2.10.4 Color Splasher (by BIM One)](#2104-color-splasher-by-bim-one)
+      + [2.10.5 BIM Interoperability Tool](#2105-bim-interoperability-tool)
+      + [2.10.6 Site Design](#2106-site-design)
 - [Sezione gestionale](#sezione-gestionale)
-  - [3.1 Obiettivi e Usi del Modello in Relazione alle Fasi del Processo](#3.1-obiettivi-e-usi-del-modello-in-relazione-alle-fasi-del-processo)
-  - [3.2 Definizione degli elaborati informativi richiesti](#3.2-definizione-degli-elaborati-informativi-richiesti)
-  - [3.3 Livello di sviluppo degli oggetti e delle schede informative](#3.3-livello-di-sviluppo-degli-oggetti-e-delle-schede-informative)
-  - [3.4 Politiche per la tutela e sicurezza del contenuto informativo](#3.4-politiche-per-la-tutela-e-sicurezza-del-contenuto-informativo)
-  - [3.5 Modalità di condivisione dei dati, dei modelli, dei documenti e degli elaborati](#3.5-modalità-di-condivisione-dei-dati,-dei-modelli,-dei-documenti-e-degli-elaborati)
-  - [3.6 Procedure di verifica, validazione di modelli, oggetti e/o elaborati](#3.6-procedure-di-verifica,-validazione-di-modelli,-oggetti-e/o-elaborati)
-    - [3.6.1 Procedure di coordinamento e verifica dei modelli](#3.6.1-procedure-di-coordinamento-e-verifica-dei-modelli)
-      - [Coordinamento modelli](#coordinamento-modelli)
-      - [Verifica e validazione dei modelli](#verifica-e-validazione-dei-modelli)
-      - [Verifiche delle interferenze geometriche](#verifiche-delle-interferenze-geometriche)
-    - [3.6.2 Processo di analisi e risoluzione delle interferenze e delle incoerenze informative](#3.6.2-processo-di-analisi-e-risoluzione-delle-interferenze-e-delle-incoerenze-informative)
-  - [3.7 Modalità di gestione informativa della programmazione (4D)](#3.7-modalità-di-gestione-informativa-della-programmazione-(4d))
-  - [3.8 Modalità di gestione informativa economica (5D)](#3.8-modalità-di-gestione-informativa-economica-(5d))
-  - [3.9 Modalità di gestione informativa delle fasi di esercizio dell'opera (6D)](#3.9-modalità-di-gestione-informativa-delle-fasi-di-esercizio-dell'opera-(6d))
-  - [3.10 Modalità di archiviazione e consegna finale di modelli](#3.10-modalità-di-archiviazione-e-consegna-finale-di-modelli)
-# Sezione Generale
+   * [3.1 Obiettivi e Usi del Modello in Relazione alle Fasi del Processo](#31-obiettivi-e-usi-del-modello-in-relazione-alle-fasi-del-processo)
+   * [3.2 Definizione degli elaborati informativi richiesti](#32-definizione-degli-elaborati-informativi-richiesti)
+   * [3.3 Livello di sviluppo degli oggetti e delle schede informative](#33-livello-di-sviluppo-degli-oggetti-e-delle-schede-informative)
+   * [3.4 Politiche per la tutela e sicurezza del contenuto informativo](#34-politiche-per-la-tutela-e-sicurezza-del-contenuto-informativo)
+   * [3.5 Modalità di condivisione dei dati, dei modelli, dei documenti e degli elaborati](#35-modalità-di-condivisione-dei-dati-dei-modelli-dei-documenti-e-degli-elaborati)
+   * [3.6 Procedure di verifica, validazione di modelli, oggetti e/o elaborati](#36-procedure-di-verifica-validazione-di-modelli-oggetti-eo-elaborati)
+      + [3.6.1 Procedure di coordinamento e verifica dei modelli](#361-procedure-di-coordinamento-e-verifica-dei-modelli)
+         - [Coordinamento modelli](#coordinamento-modelli)
+         - [Verifica e validazione dei modelli](#verifica-e-validazione-dei-modelli)
+         - [Verifiche delle interferenze geometriche](#verifiche-delle-interferenze-geometriche)
+      + [3.6.2 Processo di analisi e risoluzione delle interferenze e delle incoerenze informative](#362-processo-di-analisi-e-risoluzione-delle-interferenze-e-delle-incoerenze-informative)
+   * [3.7 Modalità di gestione informativa della programmazione (4D)](#37-modalità-di-gestione-informativa-della-programmazione-4d)
+   * [3.8 Modalità di gestione informativa economica (5D)](#38-modalità-di-gestione-informativa-economica-5d)
+   * [3.9 Modalità di gestione informativa delle fasi di esercizio dell'opera (6D)](#39-modalità-di-gestione-informativa-delle-fasi-di-esercizio-dellopera-6d)
+   * [3.10 Modalità di archiviazione e consegna finale di modelli](#310-modalità-di-archiviazione-e-consegna-finale-di-modelli)
 
-## 1.1 Scopo del documento
+# Sezione Generale<a name="sezione-generale"></a>
+
+## 1.1 Scopo del documento<a name="11-scopo-del-documento"></a>
 
 L'applicazione della metodologia BIM, prevede la creazione, la condivisione e la consegna di un modello digitale dell'opera, di seguito chiamato Modello, che raccolga e organizzi le informazioni geometriche, alfanumeriche e documentali che vengono collezionate e/o create e/o aggiornate durante l'esecuzione di un Servizio. La gestione informativa di un servizio prevede anche la programmazione e la gestione di tutte le
 attività correlate alla condivisione, verifica, consegna e uso del Modello. Nell'ambito dell'espletamento dei servizi richiesti, l'interesse dell'Ateneo ricevere un insieme di informazioni riferite o riconducibili al Bene, che siano strutturate e coerenti tra loro. Queste informazioni sono funzionali sia alla descrizione e alla catalogazione del Bene, sia alla sua gestione durante il ciclo di vita. Il presente documento contiene quindi i requisiti minimi per la produzione, gestione e trasmissione di dati, informazioni e contenuti informativi per lo svolgimento delle attività durante le diverse fasi di vita di un edificio attraverso l'uso di metodi e strumenti elettronici specifici quali la modellazione per l'edilizia e le infrastrutture (art. 23, c.13, D.Lgs. 50/2016).
@@ -74,7 +74,7 @@ Nel testo che segue sono stati elencati alcuni **suggerimenti** per l'impostazio
 
 I modelli così elaborati devono assicurare l'estrazione delle informazioni richieste e la produzione di elaborati tecnici, caratterizzati da definizioni grafiche e informative, coerenti con il Servizio e/o con il livello di progettazione richiesto. Per questa ragione, si richiede di porre particolare attenzione al raggiungimento del _Livello di Fabbisogno Informativo_ (geometrico, alfanumerico e documentale) richiesto per il servizio, ed alle modalità di verifica e consegna dei _deliverables_.
 
-## 1.2 Note introduttive di carattere generale
+## 1.2 Note introduttive di carattere generale<a name="12-note-introduttive-di-carattere-generale"></a>
 
 Prima di avviare un progetto è necessario ricordare che:
 
@@ -92,7 +92,7 @@ Prima di avviare un progetto è necessario ricordare che:
 
 - lavorare attraverso processi di lavoro condiviso velocizza il processo di produzione del modello e degli elaborati.
 
-## 1.3 Acronimi e glossario
+## 1.3 Acronimi e glossario<a name="13-acronimi-e-glossario"></a>
 
 Questa sezione comprende le principali abbreviazioni e termini utilizzati in ambiente BIM. Di seguito è riportato un elenco delle principali abbreviazioni contenute nel documento.
 
@@ -182,7 +182,7 @@ Tabella 2. Definizioni
 |            Uniformat             |                                                                                                                                   Sistema di classificazione degli oggetti alternativo all’UniClass di origine Statunitense                                                                                                                                   |
 |           Vegetazione            |                                                                                                                             Elemento vegetazionale tridimensionale o bidimensionale presente all’interno di un area o di un bene                                                                                                                              |
 |       Veicolo informativo        |                                                                          Mezzo di trasmissione di contenuti informativi. Nel settore delle 				costruzioni si suddividono in veicoli di rappresentazione (elaborati informativi) e veicoli di virtualizzazione (modelli informativi)                                                                          |
-## 1.4 Riferimenti normativi
+## 1.4 Riferimenti normativi<a name="14-riferimenti-normativi"></a>
 
 In questa sezione si indicano come riferimento le sole norme in tema di digitalizzazione, gestione informativa, ecc., da intendersi come riferimenti minimi alla base del presente documento.
 
@@ -203,15 +203,15 @@ Si elencano di seguito tutti i richiami normativi specifici connessi presi come 
 - Regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio del 27 aprile 2016 - Regolamento generale sulla protezione dei dati (e s.m.i.);
 - EUBIM Taskgroup – “Manuale per l’introduzione del BIM da parte della domanda pubblica in Europa. Un'azione strategica a sostegno della produttività del settore delle costruzioni: un fattore trainante per l'incremento del valore, l'innovazione e la crescita.”
 
-# Sezione Tecnica
+# Sezione Tecnica<a name="sezione-tecnica"></a>
 Questa sezione stabilisce le linee guida ed i principi generali in tema di lavoro collaborativo, facendo quindi riferimento alle procedure da seguire per l'utilizzo, il salvataggio e l'archiviazione dei file.
-## 2.1 Strutturazione e organizzazione dei processi di modellazione digitale
+## 2.1 Strutturazione e organizzazione dei processi di modellazione digitale<a name="21-strutturazione-e-organizzazione-dei-processi-di-modellazione-digitale"></a>
 L'organizzazione dei modelli dovrà essere identificata in base alle discipline di progetto, alla fase di processo cui fanno riferimento, ed alle dimensione dell'immobile.
 
 E' preferibile definire **modelli separati per ciascuna disciplina** o per **porzioni / blocchi** del progetto (potrebbero essere previste eccezioni per i modelli per la gestione delle fasi di costruzione e di cantiere). E’ inoltre consigliabile creare un modello per ciascun edificio. Laddove un progetto sia definito dalla coesistenza di più modelli si può prendere in considerazione di generare un modello “contenitore”, la cui funzione è quella di collegare i vari modelli per scopi di coordinamento / rilevamento delle collisioni (_clash detection_).
 
 Come requisito minimo, è richiesto un modello per la disciplina architettonica, a cui accompagnare se possibile un modello per la disciplina strutturale e più modelli per le diverse discipline impiantistiche. Eventualmente, anche in relazione alla dimensione dei modelli, questi potranno essere scomposti in ulteriori parti.
-### 2.1.1 Denominazione e codifica modelli, nuvole di punti, elaborati grafici e documentali
+### 2.1.1 Denominazione e codifica modelli, nuvole di punti, elaborati grafici e documentali<a name="211-denominazione-e-codifica-modelli-nuvole-di-punti-elaborati-grafici-e-documentali"></a>
 Nell’Ambiente di Condivisione dei Dati ogni modello informativo deve avere una denominazione univoca secondo una codifica alfanumerica con il fine di assicurare una rapida ricerca delle informazioni ed agevolare i flussi di lavoro tra i soggetti che collaborano allo sviluppo del bene[^1].
 
 Tale codifica è così composta:
@@ -323,17 +323,17 @@ Tabella 11. Codice Alfanumerico
 |      A      | As Built            |              |                        |
 |      M      | Manutenzione        |              |                        |
 |      G      | Generale            |              |                        |
-Si riportano alcuni esempi delle codifiche proposte:
 
+Si riportano alcuni esempi delle codifiche proposte:
 - IT-TS-FI-CF-054.00-ZZ-M3-A-S0001 -- Modello architettonico dello stato di fatto dell'edificio 054 Ulisse Dini;
 - IT-TS-FI-CF-054.00-ZZ-M3-M-DN001 -- Modello impianti meccanici del progetto definitivo relativo agli elementi di nuova costruzione dell'edificio 054 - Ulisse Dini;
 - IT-TS-FI-CF-094.00-ZZ-M3-F-M0001 -- Modello arredi a scopo manutentivo dell'edificio 094 - Ex Farmitalia;
 - IT-TS-FI-CN-059.00-ZZ-M3-S-M0001 -- Modello strutturale dello stato di fatto dell'edificio 059 - Rettorato.
-### 2.1.2 Dimensione massima dei file di modellazione
+### 2.1.2 Dimensione massima dei file di modellazione<a name="212-dimensione-massima-dei-file-di-modellazione"></a>
 Le dimensioni massime previste per la condivisione dei modelli di seguito riportate sono utili a garantire un processo collaborativo ragionevolmente fluido in rapporto ai limiti tecnologia delle reti e dell'hardware attuale.
 - File RVT / IFC / NWC: dimensione massima 170 MB,
 - File PDF: dimensione massima 30 MB
-### 2.1.3 Codifica degli elementi
+### 2.1.3 Codifica degli elementi<a name="213-codifica-degli-elementi"></a>
 Ogni modello disciplinare deve contiene elementi (oggetti 3D) afferenti alla stessa disciplina, i quali devono seguire una codifica univoca che li identifichi in base alla loro funzione principale e/o a caratteristiche peculiari.
 La codifica dell’elemento deve risultare esaustiva e allo stesso tempo sintetica in modo da non superare i 50 caratteri, inclusa l’estensione dei file di salvataggio in formato proprietario o aperto. Per separare i campi della codifica si deve utilizzare il carattere score (-), mentre le parole che risiedono nello stesso campo possono essere separate dal simbolo underscore (\_).
 
@@ -352,18 +352,18 @@ Nel campo **Descrizione** è possibile ad esempio rappresentare:
 - 300x300mm (Pattern)
 - CRT_150mm (caratteristica muro interno)
 - Filomuro_900x2100mm (caratteristica porta)
-### 2.1.4 Indicazioni WBS di progetto
+### 2.1.4 Indicazioni WBS di progetto<a name="214-indicazioni-wbs-di-progetto"></a>
 La WBS individuata prevede 8 livelli di scomposizione di tipo funzionale e spaziale. Tale struttura sarà ricavabile all’interno dei modelli sia, in parte, tramite la stessa gerarchizzazione degli elementi dello schema IFC, sia tramite attributi custom applicati ai singoli elementi. La valorizzazione degli attributi avverrà attraverso l’inserimento di codici identificativi (codici WBS) assegnati a ciascuna voce di descrizione dei livelli.
 
 Per l’elenco dei parametri si faccia riferimento alle tabelle in allegato.
-### 2.1.5 Indicazione delle fasi di progetto
+### 2.1.5 Indicazione delle fasi di progetto<a name="215-indicazione-delle-fasi-di-progetto"></a>
 All'interno del software Revit è possibile esplicitare 3 fasi da associare agli elementi:
 - STATO DI FATTO (existing), individua lo stato attuale dell'opera. Il modello BIM in questa fase dell'edificio è stato modellato a partire da rilievo in loco o dati d'archivio;
 - USO TEMPORANEO (temporary use), individua quegli elementi di transizione tra uno stato attuale ed uno di progetto. Tali elementi possono essere modellati a partire da file CAD o inseriti a partire da librerie di oggetti per la rappresentazione degli elementi di cantiere;
 - STATO DI PROGETTO (new construction), si andrà a modellare l'edificio nel suo stato di progetto come previsto per ogni disciplina.
 
 Questa distinzione di fasi temporali non è possibile esportarla in un unico modello IFC e perciò si ricorrere a l’esportazione di un modello per ogni singola fase andando poi ad indicare tali successione sia tramite la codifica dei singoli file o tramite parametri ad hoc.
-### 2.1.6 Altre codifiche e standard da utilizzare
+### 2.1.6 Altre codifiche e standard da utilizzare<a name="216-altre-codifiche-e-standard-da-utilizzare"></a>
 Altre codifiche da prendere in considerazione riguardano i seguenti elementi:
 - materiali;
 - spazi;
@@ -371,8 +371,8 @@ Altre codifiche da prendere in considerazione riguardano i seguenti elementi:
 - pset custom
 
 Tutte queste informazioni sono state inserite all’interno dell’Allegato A. Inoltre si trovano anche precisazioni sull’utilizzo dei pset da utilizzare, sia appartenenti allo schema IFC che creati ad hoc dall’Ateneo, e sul sistema di classificazione degli elementi da utilizzare.
-## 2.2 Sistema di coordinate e specifiche di riferimento
-### 2.2.1 Coordinate condivise
+## 2.2 Sistema di coordinate e specifiche di riferimento<a name="22-sistema-di-coordinate-e-specifiche-di-riferimento"></a>
+### 2.2.1 Coordinate condivise<a name="221-coordinate-condivise"></a>
 Affinché i Modelli siano esportabili e federabili con assoluta precisione secondo la stessa giacitura, è necessario che essi condividano lo stesso sistema di coordinate. Tale principio è sempre valido, a prescindere dalla fase (restituzione dell’esistente o progettazione) e dalla specifica attività prevista dall’appalto.
 
 Il sistema di coordinate assolute assunto a riferimento dalla stazione appaltante è l’UTM33 (RDN2008 / TM33, EPSG 6708). Demanio chiede WGS84. Il sistema di misura lineare dovrà essere quello metrico.
@@ -385,6 +385,7 @@ Tabella 12. Coordinate condivise
 |        Rotazione del Nord di Progetto        |             |
 |      Unità di Misura (Sistema metrico)       |             |
 |        Sistema di riferimento (datum)        |             |
+
 I modelli 3D devono essere coordinati geometricamente nella direzione x e y e nell'altezza z al sistema di coordinate globale (WCS). Il modello dovrà recepire nord reale e nord di progetto, nonchè punto di rilevamento e punto base.
 
 Il **Punto di Rilievo del Bene** rappresenta l’origine assoluta da utilizzare per il coordinamento/federazione dei modelli ed è un punto noto che sarà utilizzato per integrare i modelli con altri sistemi di georeferenziazione territoriale. L’esportazione dei Modelli dovrà sempre essere effettuata in riferimento al Punto di Rilievo, indipendentemente dal software di authoring utilizzato.
@@ -394,13 +395,13 @@ Nella restituzione dei Fabbricati costituenti il Bene, deve essere utilizzato un
 Attualmente per progetti di piccola scala (per esempio dei singoli edifici) si richiede di utilizzare i soli parametri di _Longitude_, _Latitude_ ed _Elevation_ relativi all'entità [IfcSite](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSite.htm), i quali possono essere utilizzati per fornire un'indicazione approssimativa della localizzazione del sito. Questa metodologia non intende sostituire la georeferenziazione del modello, ma può essere utile per quei casi d'uso che non richiedono informazioni geospaziali precise (ad esempio, simulazioni di ombreggiamento solare). Se definiti, i parametri _Longitude_, _Latitude_ ed _Elevation_ stabiliscono il punto in WGS84 in cui si trova il punto (0, 0, 0) del \\_LocalPlacement_ di [IfcSite](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSite.htm).
 
 **N.B.** Si pone l'attenzione sull'impossibilità di ottenere una reale georeferenziazione dei modelli nella versione 2X3 dello schema IFC per la mancanza delle classi relative a questa funzione. Solo dalla versione IFC4 sono state introdotte le classi [IfcCoordinateOperation](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoordinateOperation.htm) e [IfcCoordinateReferenceSystem](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoordinateReferenceSystem.htm), relative alla classe [IfcProject](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcProject.htm), che possono essere utilizzate per l'associazione di precise informazioni geospaziali. Si faccia riferimento al [documento](https://www.buildingsmart.org/wp-content/uploads/2020/02/User-Guide-for-Geo-referencing-in-IFC-v2.0.pdf) prodotto da buildingSMART Australasia per una panoramica più approfondita sulla georeferenziazione all'interno dello schema IFC.
-### 2.2.2 Template di modello
+### 2.2.2 Template di modello<a name="222-template-di-modello"></a>
 Per garantire la coerenza tra i vari modelli disciplinari, tutti i modelli dovranno essere sviluppati a partire da un medesimo template di progetto in cui saranno precaricati tutti i parametri comuni alle varie discipline e che sono esplicitati nelle tabelle in allegato. Se si presenterà la necessità di aggiungere parametri in corso d'opera questo verrà fatto tramite l'utilizzo di parametri condivisi da aggiungere al template di partenza.
 
 Ogni nuovo modello disciplinare dovrà condividere il sistema di coordinate (_internal origin_, _base point_ e _survey point_) rispetto anche ai file di coordinamento.
 
 Per quanto riguarda l'aspetto grafico, ogni professionista potrà usare **template, stili grafici e standard propri** (es. le tavole strutturali potranno essere differenti da quelle architettoniche e allo stesso modo dicasi per gli impianti). Potranno essere stabilite regole interne (fra i professionisti indicati) per ottimizzare l'output delle tavole.
-## 2.3 Convenzione per la nomenclatura delle viste all'interno dei software commerciali
+## 2.3 Convenzione per la nomenclatura delle viste all'interno dei software commerciali<a name="23-convenzione-per-la-nomenclatura-delle-viste-allinterno-dei-software-commerciali"></a>
 Attraverso questo capitolo si vuole definire le regole di gestione del “BROWSER DI PROGETTO” all’interno dei modelli realizzati tramite l’utilizzo del software di BIM authoring Autodesk Revit.
 
 La nomenclatura dovrà seguire la seguente struttura:
@@ -418,10 +419,11 @@ Tabella 13: Convenzione per la denominazione delle viste
 | Controllo Qualità (Quality Check) |   QC   | Viste utilizzate dal BIM Coordinator per il controllo qualitativo dei modelli                                                                                                                     |
 | Vista di Consegna (Delivery View) |   D    | Viste da consegnare, ne fanno parte anche tutte le viste che devono essere incluse nei modelli 3D (piante, schedules, ...)                                                                        |
 | Vista Esportazione (Export View)  |   E    | Viste per l’esportazione in altri formati (.dwg, IFC, FBX, ...)                                                                                                                                   |
+
 Per i codici Disciplina, Fase progetto e Livello si faccia riferimento alle tabelle per la nomenclatura dei file viste nei capitoli precedenti. Mentre per il codice Scala, al fine di evitare l’uso di carattere speciali quali i due punti (:), si inserirà solo il valore numerico (es. 10, 20, 50, 100, 200, …). La descrizione aggiuntiva serve a dare maggiori informazioni circa l’obiettivo di tali vista come, ad esempio, abbattimento delle barriere architettoniche, vigili del fuoco, schemi individuazioni tipologia pareti, …
 
 Per Sezioni, viste 3D, Drafting Views e Schedules (a meno di particolari casi) il parametro di Livello viene sostituito da “NA” (Not Applicable) oppure viene soppresso in quanto non riferite ad uno specifico livello.
-## 2.4 Convenzione per l'ordinamento del browser di progetto all'interno dei software commerciali
+## 2.4 Convenzione per l'ordinamento del browser di progetto all'interno dei software commerciali<a name="24-convenzione-per-lordinamento-del-browser-di-progetto-allinterno-dei-software-commerciali"></a>
 Per l’organizzazione del browser si consiglia di utilizzare lo schema “LB_Browser” presente all’interno del template prodotto con il software Autodesk Revit.
 
 Le viste saranno organizzate attraverso il Browser di progetto e attraverso il sistema qui definito. Le viste sono organizzate secondo la convenzione precedentemente descritta. Si utilizzeranno prevalentemente due tipi di vista: W, viste in fase di elaborazione (Working View), e L (Layout View), viste necessarie all’impaginazione.
@@ -431,13 +433,13 @@ Le viste saranno organizzate attraverso il Browser di progetto e attraverso il s
 Quest’ultima tipologia potrà contenere tutte le indicazioni per una corretta esecuzione delle tavole, quali testi, quote, annotazioni, simboli, …, o potranno essere utilizzate come collegamenti per la creazione di tavoli su file esterni.
 
 ![Figura 2: Browser di Progetto - Ordinamento e Raggruppamento](images/BrowserProgetto_02.png "Figura 2: Browser di Progetto - Ordinamento e Raggruppamento")
-## 2.5 Impostazione del progetto e regole di modellazione
+## 2.5 Impostazione del progetto e regole di modellazione<a name="25-impostazione-del-progetto-e-regole-di-modellazione"></a>
 Un progetto è soggetto a costanti modifiche nel tempo ed è quindi necessario sviluppare delle strategie che consentano di poter gestire i cambiamenti e le modifiche nel minor tempo possibile. Si suggerisce quindi di procedere facendo attenzione ai seguenti aspetti che verranno riportati nei capitoli seguenti:
 - impostazione del progetto e regole di modellazione;
 - nomenclatura e sistemi di classificazione;
 - standard grafici;
 - template di riferimento.
-### 2.5.1 Definizione dell'area di lavoro
+### 2.5.1 Definizione dell'area di lavoro<a name="251-definizione-dellarea-di-lavoro"></a>
 Può essere utile soprattutto agli inizi della fase di modellazione e impostazione del progetto, definire un’area di lavoro tracciando 4 piani di riferimenti (piano di lavoro Nord, Sud, Est e Ovest) per definire i limiti dell’area di lavoro.
 
 I livelli e le griglie dovranno essere estesi oltre a questi riferimenti in modo tale da garantire ad ogni vista (sezione o prospetto) di estendere oltre ai margini della vista i livelli e le griglie. Nell’immagine è riportato un esempio.
@@ -447,14 +449,14 @@ I livelli e le griglie dovranno essere estesi oltre a questi riferimenti in modo
 ![Figura 4: Area di lavoro in vista di prospetto con griglie e livelli](images/AreaLavoro_02.png "Figura 4: Area di lavoro in vista di prospetto con griglie e livelli")
 
 Si consiglia di estendere griglie e livelli oltre tali piani di riferimento per averli sempre visibili nelle varie viste.
-### 2.5.2 Sistema di riferimento per l'impostazione del lavoro
+### 2.5.2 Sistema di riferimento per l'impostazione del lavoro<a name="252-sistema-di-riferimento-per-limpostazione-del-lavoro"></a>
 Durante la fase di avvio del progetto, è necessario impostare un **sistema di riferimento** di lavoro costituito da:
 - **Origine di progetto** comune e condivisa fra tutti i file (anche fra le diverse discipline). E’ necessario impostare un sistema di riferimento condiviso fra i vari modelli (stabilire un’origine comune fra i file, ad esempio un punto di ordine 0,0,0 oppure georeferenziare i file). Il sistema di riferimento deve essere comune a tutti i tipi di file, da quelli in formato proprietario a quelli in formato aperto;
 - **Livelli**, che potranno subire cambiamenti. Dovranno essere definiti dei piani di lavoro (quota finito architettonico e quota impalcato strutturale) usando il comando “LIVELLI”. Se si reputa necessario utilizzare piani ausiliari di supporto alla modellazione (es. rivestimenti, davanzali, ecc.) è possibile utilizzarli stando però attenti ad evitarne l’esportazione in formato IFC o a collegarci elementi costruttivi;
 - **Assi strutturali**, le "GRIGLIE" dovranno essere rinominate suddividendole tra griglie verticali (es. A01, A02, A03, ...) e griglie orizzontali (es. AA, AB, AC, ...);
 - **Riferimenti architettonici**, si potrà creare un sistema griglie (o piani) rispetto a quelle strutturali (differenti per nome e per colore, creando un nuovo tipo) che descriveranno i fili esterni delle partizioni esterne (oppure in relazione del nucleo interno del muro che servirà come riferimento per estendere il pavimento fino a toccare il nucleo). Si possono usare anche piani di riferimenti compatibilmente con la chiarezza e lettura del disegno;
 - **Vincoli urbanistici**, vincoli urbanistici saranno inseriti in Revit attraverso il comando “CONFINI CATASTALI”. Se necessario si potranno inserire altri riferimenti attraverso il comando “PIANO DI RIFERIMENTO”.
-### 2.5.3 Georeferenziazione del modello
+### 2.5.3 Georeferenziazione del modello<a name="253-georeferenziazione-del-modello"></a>
 
 Prima di procedere alla modellazione degli elementi di sistema è buona prassi definire la corretta georeferenziazione del modello e l’inclinazione del nord reale rispetto al nord di progetto (utilizzato per lavorare con piani verticali ed orizzontali invece che obliqui).
 
@@ -465,16 +467,16 @@ Le viste di pianta vengono aperte di default nella condizione di Nord di Progett
 E' possibile effettuare anche l'operazione inversa, ovvero, a partire da un nord reale modificare il nord di progetto in modo da ottenere un posizionamento dell'oggetto migliore ai fini della modellazione.
 
 ![Figura 6: Definizione dell'inclinazione del Nord Reale rispetto al Nord di Progetto](images/NordReale_01.png "Figura 6: Definizione dell'inclinazione del Nord Reale rispetto al Nord di Progetto")
-### 2.5.4 Coordinamento con un modello di riferimento (master)
+### 2.5.4 Coordinamento con un modello di riferimento (master)<a name="254-coordinamento-con-un-modello-di-riferimento-master"></a>
 Nel caso si abbia già un modello di coordinamento, collegato al nostro modello di progetto, in cui sono state inserite griglie e livelli è necessario ricorrere al comando “COPIA-CONTROLLA” per importare nel proprio modello questi elementi nelle medesime posizioni rispetto all’origine. Questo processo eviterà di modificare erroneamente la posizione di elementi condivisi in quanto il software restituirà un avviso nel quale indica che un oggetto ha perso il riferimento con il modello collegato.
-### 2.5.5 Collegamenti di file CAD
+### 2.5.5 Collegamenti di file CAD<a name="255-collegamenti-di-file-cad"></a>
 Nel caso in cui il nostro modello abbia dei file CAD di riferimento è buona prassi collegarli all’interno del modello evitandone l’importazione. Al momento della creazione del collegamento è buona pratica verificare:
 - che il file CAD sia ottimizzato (ripulito di tutte le informazioni non necessarie e posizionato con una origine congrua al "project base point" del file .rvt);
 - che sia presente il flag in "SOLO VISTA CORRENTE" ("Current View Only");
 - che sia assente il flag in "Current line that are slightly off axis";
 - che il posizionamento sia "DA ORIGINE A ORIGINE";
 - che l'unità di misura sia la stessa del progetto.
-### 2.5.6 Suggerimenti per la realizzazione di una superficie topografica (terreno)
+### 2.5.6 Suggerimenti per la realizzazione di una superficie topografica (terreno)<a name="256-suggerimenti-per-la-realizzazione-di-una-superficie-topografica-terreno"></a>
 Il terreno può essere realizzato partendo da:
 - inserimento di punti singoli nell'are di lavoro definendone le altezze;
 - file ._dwg_ che contiene polilinee posizionate in quota oppure tramite punti 3D;
@@ -483,45 +485,45 @@ Il terreno può essere realizzato partendo da:
 Una volta creata la topografia è possibile andare a definire delle sotto-regioni a cui associare attributi o materiali differenti a seconda delle necessità (es. render).
 
 Rilevati, scarpate e strade possono essere modellate con il plug-in "Site Design" (**in progress**).
-### 2.5.7 Creazione di modelli di vista
+### 2.5.7 Creazione di modelli di vista<a name="257-creazione-di-modelli-di-vista"></a>
 Quando si creano delle viste è buona prassi associare ad ognuna un modello di vista in funzione del tipo di vista che stiamo impostando.
-### 2.5.8 Sistema di annotazione
-### 2.5.9 Annotazioni per le revisioni
+### 2.5.8 Sistema di annotazione<a name="258-sistema-di-annotazione"></a>
+### 2.5.9 Annotazioni per le revisioni<a name="259-annotazioni-per-le-revisioni"></a>
 Le revisioni saranno indicate tramite il comando nuvola di revisione.
-### 2.5.10 Spessori e tipi di linee
+### 2.5.10 Spessori e tipi di linee<a name="2510-spessori-e-tipi-di-linee"></a>
 Le linee presenti nel template di riferimento differiscono anche a seconda delle scale di rappresentazione.
-### 2.5.11 Stili di linee
+### 2.5.11 Stili di linee<a name="2511-stili-di-linee"></a>
 Settare i tipi di linea in Revit può essere un processo molto lungo e noioso, soprattutto quando è necessario modificare localmente un disegno bidimensionale e aggiungere delle informazioni. Per aiutare in questo processo sono state inserire, invece della solita suddivisione standard fra Linee sottili, Linee medie, Linee pesanti, degli stili suddivisi sia per spessori, con identificativi numerici, che per tipologia.
 
 ![Figura 7: Stili di Linea caricate nel template](images/StileLinee_01.png "Figura 7: Stili di Linea caricate nel template")
 
 Inoltre, sono state aggiunte delle linee che potrebbero essere utili durante il disegno dei particolari esecutivi e dettagli.
-### 2.5.12 Stili di quote
+### 2.5.12 Stili di quote<a name="2512-stili-di-quote"></a>
 Le quote riportano la seguente convenzione grafica ed utilizzano lo
 stile di carattere Arial Narrow 1.8 mm.
 
 ![Figura 8: Stili di quote e testi](images/Quote-Testi.jpg "Figura 8: Stili di quote e testi")
 
-### 2.5.13 Tipi di testo
+### 2.5.13 Tipi di testo<a name="2513-tipi-di-testo"></a>
 I testi riportano il tipo di carattere “Franklin Gothic Medium” riportato all’interno della descrizione del tipo in quanto potrebbe essere necessario utilizzare altri tipi di carattere, anche se è fortemente sconsigliato. I testi sono principalmente di colore arancio ma possono essere utilizzati anche altri colori in caso di necessità:
 - Arancio, per tutte le annotazioni (testo di default) -- riporta il termine "Orange" alla fine del nome e la dimensione in mm (RGB: 255; 063; 000);
 - Nero, in caso di impaginazione tavole per pratiche edilizie -- anche in questo caso sarà riportato il codice "Black" in fondo al testo (RGB: colore nero Revit)
 
 Effetti corsivi, sottolineati e grassetti dovranno riportare in fondo al testo l'indicazione "I" (italic), "B" (bold) e "U" (underlined).
-### 2.5.14 Tipi di campiture
+### 2.5.14 Tipi di campiture<a name="2514-tipi-di-campiture"></a>
 
 ![Figura 9: Tipi di campiture](images/Campiture.jpg "Figura 9: Tipi di campiture")
-### 2.5.15 Tipi di contrassegno
+### 2.5.15 Tipi di contrassegno<a name="2515-tipi-di-contrassegno"></a>
 I locali hanno 2 tipi di etichette in funzione della scala di rappresentazione (con area o senza area). Porte e finestre verranno indicate solo col codice prevalentemente rispetto al senso dell’apertura della porta (fai riferimento a standard grafici). Murature saranno indicati con il singolo del rombo.
 
 Le famiglie nidificate avranno annotazioni per ciascun tipo di rivestimento (Attenzione: all’interno della famiglia quando si nidifica una famiglia, è necessario controllare che il parametro “condiviso” sia stato attivato, altrimenti nel progetto non è possibile leggere il contrassegno tipo della famiglia nidificata).
 
 ![Figura 10: Tipi di notazione](images/Contrassegni.jpg "Figura 10: Tipi di notazione")
-### 2.5.16 Simboli di vista
+### 2.5.16 Simboli di vista<a name="2516-simboli-di-vista"></a>
 Il simbolo _Interior Elevation_ si utilizza per i prospetti. Il simbolo _Detail / Section_ si utilizzerà per le sezioni. Il simbolo _Elevation_ si utilizza per l'inserimento di quote altimetriche nelle viste di pianta o in elevazione.
-### 2.5.17 Altri simboli
+### 2.5.17 Altri simboli<a name="2517-altri-simboli"></a>
 Oltre a quelli già presenti all’interno del template è possibile inserire altri simbolo di utilizzo comune da concordare con i responsabili.
-## 2.6 Specifica per l'inserimento di oggetti
+## 2.6 Specifica per l'inserimento di oggetti<a name="26-specifica-per-linserimento-di-oggetti"></a>
 Di seguito sono specificate le modalità di inserimento e/o vincoli dei principali elementi tecnici rispetto ai principali sistemi di riferimento spaziali definiti nel modello stesso.
 
 Si riportano di seguito alcune buone pratiche di modellazione per singole categorie di elementi:
@@ -567,7 +569,7 @@ Altre regole:
 - usare parametri che fanno riferimento allo schema IFC ove possibile o più semplificati possibile con nomi corti (es. D, d, rmax, rmin, ecc);
 - usare le sotto-categorie standard o quelle codificate;
 - per l'impostazione dei paramenti e dei vincoli si usa il comando "quota". In linea generale si deve selezionare prima l'asse che si muove e poi quello che rimane fisso.
-## 2.7 Altri suggerimenti per l’ottimizzazione del processo
+## 2.7 Altri suggerimenti per l’ottimizzazione del processo<a name="27-altri-suggerimenti-per-lottimizzazione-del-processo"></a>
 **Collegamenti** - un file collegato (.rvt o .dwg) se non servono devono essere scaricati e ricollegati soltanto in fase di utilizzo. Alla consegna di un modello in formato nativo è buona prassi rimuovere tutti i modelli collegati nei vari formati.
 
 **File .dwg** -- ridurre al minimo il numero di file DWG collegati o importati. E’ preferibile che i file DWG siano collegati e non importati in quanto, in quest’ultimo caso, Revit scompone in file e carica al suo interno tutte le entità (linee, polilinee, tratteggi, ecc).
@@ -593,7 +595,7 @@ Altre regole:
 - chiudere finestre inutili attraverso il comando "CHIUDE FINESTRE NASCOSTE";
 - assegnare alle viste il livello di dettaglio appropriato;
 - disattivare le ombre nelle viste non necessarie.
-## 2.8 Principi generali di lavoro collaborativo
+## 2.8 Principi generali di lavoro collaborativo<a name="28-principi-generali-di-lavoro-collaborativo"></a>
 Esistono numerosi metodi che consentono la collaborazione in ambiente BIM, comprese le pratiche di lavoro e la gestione della squadra di progetto, nonché le soluzioni tecnologiche definite sinteticamente da questo documento.
 
 Questa sezione tratta i principi di suddivisione e condivisione di un modello ai fini di garantire efficienza operativa per grandi progetti, garantire l’accesso contemporaneo multiutente sullo stesso progetto e di permettere una collaborazione interdisciplinare.
@@ -603,7 +605,7 @@ Nel caso specifico dell’Ufficio Tecnico la terminologia seguente farà riferim
 Il primo, (**file collegati**), consiste nel collegare all’interno di un file di lavoro Revit un altro modello in formato proprietario (.rvt) o in formato aperto (.ifc). Si potrà accedere a ciascun file singolarmente e non è permesso il lavoro simultaneo sullo stesso file. Con la stessa metodologia è possibile collegare all’interno di un modello anche file di altra natura come .dwg, .rcp/rcs (ReCap) o .nwc (Navisworks). Il secondo (**worksets**) permette invece di lavorare contemporaneamente sullo stesso file (si veda cap. xx), suddividendo con criterio tra gli utenti gli elementi o le viste di pertinenza.
 
 Le proprietà degli oggetti parametrici che sono definite all’interno del template o di qualsiasi modello possono essere trasferite (attraverso il comando “TRASFERISCI STANDARD DI PROGETTO”) all’interno di un altro file di lavoro. In questo modo la fase di progettazione è separata dalla fase di gestione delle famiglie.
-## 2.9 Standard grafici per la produzione degli elaborati
+## 2.9 Standard grafici per la produzione degli elaborati<a name="29-standard-grafici-per-la-produzione-degli-elaborati"></a>
 Al fine di mantenere i file leggeri e fruibili, è opportuno modellare scorporando il file di modellazione da quello utilizzato per la creazione delle tavole, secondo due tipologie:
 - **Work Model**, destinato alla modellazione;
 - **Sheet Model**, destinati all’estrazione dei dati e delle tavole di progetto. In tale file sarà possibile importare dei file CAD solo se utili alla rappresentazione in tavola di legende o dettagli costruttivi non rappresentabili nel modello.
@@ -617,12 +619,12 @@ Si riportano alcune accortezze da tenere a mente quando si producono elaborati g
 **Schemi** - Può essere utile impaginare le tavole utilizzando una pianta per tavola, riportando in basso (o in alto) schemi per l’indicazione dei materiali e tabelle per il calcolo dei rapporti areo illuminanti. Altresì può essere utile riportare sopra al cartiglio, tabelle riassuntive per i codici degli elementi.
 
 **Codifica** - Per porte e finestre l’etichetta dovrà essere orientata perpendicolarmente rispetto all’elemento e allineato rispetto ad una dei due montanti verticali. Per le altre etichette l’orientamento di lettura deve essere in funzione all’orientamento della tavola.
-## 2.10 Integrazione con altri software
+## 2.10 Integrazione con altri software<a name="210-integrazione-con-altri-software"></a>
 Revit permette di progettare in modo integrato, utilizzando una serie di software che permettono di apportare agevolare i processi di produzione di modelli e portare al progetto contributi in vari settori specialistici. Nel nostro caso si individuano alcuni percorsi di approfondimento sia per alcuni plug-in molto utilizzati che per l’integrazione di software terzi in ambiti specialistici come:
 1. rendering;
 2. analisi strutturale;
 3. analisi energetica.
-### 2.10.1 Droots One
+### 2.10.1 Droots One<a name="2101-droots-one"></a>
 Questo è un pacchetto unico che riunisce al suo interno più strumenti fondamentali per l'utilizzo professionale del software revit.
 
 1\) **Sheet Link**, ermette di importare/esportare fogli di calcolo Excel o Google Sheet. E’ possibile sia impostare l’esportazione di un abaco creandolo sul base sulla base di una selezione di categorie di elementi e parametri associati, o esportare abachi già impostati all’interno del progetto (fig. 12).
@@ -650,7 +652,7 @@ Una volta modificati i parametri è possibile importare il file in Revit tramite
 ![Figura 15: Pannello Parameters del plug-in ParaManager](images/ParaManager_01.png "Figura 15: Pannello Parameters del plug-in ParaManager")
 
 ![Figura 16: Pannello Categories del plug-in ParaManager](images/ParaManager_02.png "Figura 16: Pannello Categories del plug-in ParaManager")
-### 2.10.2 pyRevit (by Ehsan Iran-Nejad)
+### 2.10.2 pyRevit (by Ehsan Iran-Nejad)<a name="2102-pyrevit-by-ehsan-iran-nejad"></a>
 PyRevit è un plugin gratico che offre sia delle funzionalità di base ma che permette anche di creare i propri tools tramite linguaggio Python.
 1. **Make Pattern**, permette di creare delle campiture personalizzate. Per iniziare, è necessario creare una Vista di disegno e disegnare il modello utilizzando delle linee di dettaglio assicurandosi che entri all'interno di un rettangolo (non è necessario disegnare un rettangolo vero e proprio). Selezionare poi le linee e utilizzare lo strumento “CREA MODELLO” nella scheda pyRevit. È possibile attivare anche alcune opzioni come il “ribaltamento orizzontale/verticale”, “scala”, “ruota” e “crea regione riempita”. Immettere il nome del modello e selezionare il tipo di campitura Dettaglio o Modello. Quando si è pronti, fare clic su Crea modello. Un’altra opzione è quella di poter esportare un _pattern_ esistente in formato _.pat_.
 
@@ -703,7 +705,7 @@ Tramite questo comando si va quindi a selezionare prima la revisione da dover ag
 ![Figura 27: Comando Place Origin Marker](images/pyRevit_OriginMarker_01.png "Figura 27: Comando Place Origin Marker")
 
 11. **Print Ordered Sheet Index**, consente di stampare tavole da un elenco specifico e non solo dai filtri delle revisioni come avviene con il comando base di Revit. Questo torna utile per rendersi conto se stiamo stampando le tavole corrette a partire da una lista/revisione specifica.
-### 2.10.3 Isolate Warnings (by Archisoft)
+### 2.10.3 Isolate Warnings (by Archisoft)<a name="2103-isolate-warnings-by-archisoft"></a>
 Permette di visualizzare gli elementi interessati da avvisi all’interno di una vista. Dal pannello di gestione degli avvisi è necessario esportare la lista in formato .html. Adesso è possibile utilizzare il comando del plug-in il quale richiederà di selezionare un file in formato .html per riconoscere gli elementi interessati da avvisi.
 
 In automatico verranno generate due viste 3D:
@@ -711,7 +713,7 @@ In automatico verranno generate due viste 3D:
 - OverrideWarningElement, in cui gli elementi interessati da avviso appariranno colorati in verde e con le linee di colore rosso.
 
 Selezionando uno di questi elementi si renderà disponibile il comando "SHOW RELATED WARNINGS" il quale ci fornirà la descrizione degli errori associati a quel singolo elemento.
-### 2.10.4 Color Splasher (by BIM One)
+### 2.10.4 Color Splasher (by BIM One)<a name="2104-color-splasher-by-bim-one"></a>
 Permette di colorare le viste basandosi sui valori dei parametri degli elementi. Permette di creare degli schemi colori che riflettono i parametri di una determinata categoria di elementi. La procedura standard di Revit prevede di identificare inizialmente una specifica categoria di elementi, aggiungere un filtro alla vista (se è già stato creato) e poi impostare una sostituzione grafica.
 
 Questo plug-in permette di fare tutto questo in un unico pannello. La prima cosa da fare è selezionare una o più categorie di elementi (il menù permette di visualizzare solo le categorie visibili nella vista). Dopo di che è possibile selezionare uno dei parametri disponibili per quella categoria (o in comune a più categorie se abbiamo effettuato una selezione multipla), in automatico lo strumento restituisce uno schema colori sulla base dei valori contenuti in quel parametro. Se si volessero cambiare i colori possiamo utilizzare i comandi “RAIMBOW” o “REFRESH”. E’ possibile modificare i colori anche manualmente cliccando sulla singola riga dello schema. Una volta che lo schema è pronto si può utilizzare il comando “APPLY COLOR SET” per applicare il filtro alla vista.
@@ -721,13 +723,13 @@ Per evitare di perdere le impostazione appena create è bene salvare lo schema t
 Lo schema colori appena impostato può essere visualizzato anche da colore che non hanno il plug-in installato ma solo tramite quest’ultimo sarà possibile modificarlo.
 
 **N.B.** Al momento della stesura di questo documento c’è una problematica sulla sostituzione grafica effettuata dal plug-in in quanto questa va ad interessare non solo le linee di taglio ma anche quelle in proiezione.
-### 2.10.5 BIM Interoperability Tool
+### 2.10.5 BIM Interoperability Tool<a name="2105-bim-interoperability-tool"></a>
 Da completare
-### 2.10.6 Site Design
+### 2.10.6 Site Design<a name="2106-site-design"></a>
 Da completare
-# Sezione gestionale
+# Sezione gestionale<a name="sezione-gestionale"></a>
 Questa sezione stabilisce i requisiti gestionali minimi per le attività di modellazione e di gestione informativa.
-## 3.1 Obiettivi e Usi del Modello in Relazione alle Fasi del Processo
+## 3.1 Obiettivi e Usi del Modello in Relazione alle Fasi del Processo<a name="31-obiettivi-e-usi-del-modello-in-relazione-alle-fasi-del-processo"></a>
 
 Di seguito si descrivono gli obbiettivi relativamente ai BIM uses del modello in un contesto generico. In particolare si può fare riferimento ai [BIM Uses](https://bim.psu.edu/uses/) definiti dalla Penn State University.
 
@@ -739,14 +741,14 @@ Tabella 14. Obiettivi e Usi del Modello in Relazione alle Fasi del Processo
 |      Autorizzativa / Progettazione Definitiva      | Fornire modello coordinato multidisciplinare e aggiornabile, definendo ogni elemento del 	progetto definitivo tale che sia identificato informa, tipologia, 	qualità e dimensione. Valutazione ed analisi delle soluzioni progettuali. Ottenimento di autorizzazioni e pareri di enti terzi. Programmazione dei lavori e controllo sui costi. Generazione di elaborati grafici, render e foto inserimenti.                                                                                                                                                                                                                                                                                                                                | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Design Review, Coordinamento 3D                  |
 |       Tecnologica / Progettazione esecutiva        | Valutazione ed analisi delle soluzioni progettuali. Fornire modello coordinato multidisciplinare e 				aggiornabile, definendo ogni elemento del progetto esecutivo tale che sia identificato in forma, tipologia, qualità e dimensione. Definizione di dettaglio delle tecnologie, ingegnerizzazione degli elementi e delle attività necessari al successivo stadio di produzione, recepimento dei vincoli e delle prescrizioni 				dettate nei titoli abilitativi. Generazione di elaborati grafici, render e foto inserimenti. Generazione della documentazione di 				progetto. Interazione con elaborati di computo metrico (quantity 	take-off), cronoprogrammi ed elaborati inerenti la sicurezza 				(PSC) e la cantierizzazione. | Architettonico, opere esterne, edifici del 				contesto esistente e paesaggio \| Coordinamento, architettonico, opere esterne, edifici del contesto esistente e paesaggio, 				strutture, impianti | Design Review, Coordinamento 3D                  |
 | Realizzativa / Costruttiva / Gestione del cantiere | Supporto all’ingegnerizzazione di tutti gli interventi previsti nelle precedenti fasi di progettazione o 				di varianti dovute al manifestarsi di condizioni impreviste.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Design Review, Progettazione sistemi costruttivi |
-| Realizzativa / Costruttiva / Gestione del cantiere | Coordinamento interdisciplinare delle interferenze.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Coordinamento 3D                                 |
-| Realizzativa / Costruttiva / Gestione del cantiere | Monitoraggio delle fasi di lavoro e della relativa cantierizzazione con particolare riguardo per le attività di coordinamento della sicurezza in fase di esecuzione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Coordinamento, architettonico, opere esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                                  | Coordinamento 4D                                 |
-| Realizzativa / Costruttiva / Gestione del cantiere | Monitoraggio e verifica materiali, quantità e costi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Quantity Take-off Analysis 5D                    |
-| Realizzativa / Costruttiva / Gestione del cantiere | Restituzione modello aggiornato degli interventi realizzati.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Record Modeling                                  |
-| Realizzativa / Costruttiva / Gestione del cantiere | Redazione dei Piani manutenzione dell'opera integrati con il modello.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Impianti, antincendio                                                                                                                                                                              | Programmazione della gestione e manutenzione     |
+|                                                    | Coordinamento interdisciplinare delle interferenze.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Coordinamento 3D                                 |
+|                                                    | Monitoraggio delle fasi di lavoro e della relativa cantierizzazione con particolare riguardo per le attività di coordinamento della sicurezza in fase di esecuzione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Coordinamento, architettonico, opere esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                                  | Coordinamento 4D                                 |
+|                                                    | Monitoraggio e verifica materiali, quantità e costi.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Quantity Take-off Analysis 5D                    |
+|                                                    | Restituzione modello aggiornato degli interventi realizzati.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Coordinamento, architettonico, opere 				esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                              | Record Modeling                                  |
+|                                                    | Redazione dei Piani manutenzione dell'opera integrati con il modello.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Impianti, antincendio                                                                                                                                                                              | Programmazione della gestione e manutenzione     |
 |          Gestionale / Collaudo e consegna          | Fornirsi di modello coordinato multidisciplinare e aggiornabile in fase di gestione dell’opera.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Coordinamento, architettonico, opere esterne, edifici del contesto esistente e paesaggio, strutture, 				impianti                                                                                  | Programmazione della gestione e manutenzione     |
 
-## 3.2 Definizione degli elaborati informativi richiesti
+## 3.2 Definizione degli elaborati informativi richiesti<a name="32-definizione-degli-elaborati-informativi-richiesti"></a>
 In relazione alla generazione degli elaborati informativi grafici progettuali si prenda a riferimento le origini ed i collegamenti come illustrato nella seguente tabella.
 
 Tabella 15. Definizione degli elaborati informativi richiesti
@@ -785,11 +787,11 @@ Tabella 16. Definizione dell'origine degli elaborati informativi richiesti
 |    Altri documenti     | Scheda informativa | Manuale d'uso         | Scheda informativa        |
 
 Nel caso di modello eseguito esternamente dall’Ufficio Tecnico questi dovranno essere consegnati principalmente tramite formato interoperabile IFC, e si potrà valutare la richiesta di trasmissione anche del formato nativo.
-## 3.3 Livello di sviluppo degli oggetti e delle schede informative
+## 3.3 Livello di sviluppo degli oggetti e delle schede informative<a name="33-livello-di-sviluppo-degli-oggetti-e-delle-schede-informative"></a>
 II livello di sviluppo degli oggetti che compongono i modelli grafici (LOD) definisce quantità e qualità del loro contenuto informativo ed è funzionale al raggiungimento degli obiettivi delle fasi a cui il modello si riferisce. Il livello di sviluppo di un oggetto va considerato come risultante della sommatoria delle informazioni di tipo geometrico e non-geometrico, (normativo, economico ecc.) che possono essere rappresentate in forma grafica 2D e 3D, in forma alfanumerica (4D tempo, 5D costi, ecc.) e tramite documentazione allegata.
 
 Al fine di superare il concetto statico di LOD proposto dalla UNI 11337-4, nelle presenti linee guida si propone la definizione del _Level Of Information Need_ per le varie categorie edilizie. Si precisa quindi che gli oggetti avranno un livello di dettaglio per garantire la corretta rappresentazione richiesta dai livelli progettuali secondo criteri di legge (scala 1:100 per il progetto definitivo e 1:50 per il progetto esecutivo). Inoltre, per quanto riguarda il contenuto informativo, ciascun oggetto dovrà disporre dei parametri necessari alla sua manutenzione e che verranno elencati nei capitoli successivi facendo sempre riferimento, ove possibile, ai parametri propri dello schema IFC.
-## 3.4 Politiche per la tutela e sicurezza del contenuto informativo
+## 3.4 Politiche per la tutela e sicurezza del contenuto informativo<a name="34-politiche-per-la-tutela-e-sicurezza-del-contenuto-informativo"></a>
 La tutela e la sicurezza del contenuto informativo digitale sarà conforme al quadro normativo come definito dalla norma UNI 11337-6:2017 al punto 5.4.6.1.
 
 In aggiunta ai criteri generali identificati tramite gli strumenti normativi, dovranno essere adottate azioni specifiche necessarie al fine di garantire il rispetto dei principi espressi dalle suddette norme:
@@ -797,19 +799,19 @@ In aggiunta ai criteri generali identificati tramite gli strumenti normativi, do
 - garanzia di salvataggio di numero di copie sufficienti;
 - definizione dei processi di salvataggio dei modelli grafici informativi in relazione al loro riutilizzo, modifica, visualizzazione;
 - redazione di una scheda informativa digitale identificativa da allegare al modello grafico informativo al momento del caricamento nell’archivio di condivisione dei dati (ACDat), da parte dell’affidatario, all’interno della quale dovrebbero essere riportati gli scopi, l’identità del modellatore delle informazioni e una breve descrizione del modello stesso. Tale scheda è redatta al fine di poter sempre stabilire le responsabilità delle figure professionali associate ai modelli pubblicati.
-## 3.5 Modalità di condivisione dei dati, dei modelli, dei documenti e degli elaborati
+## 3.5 Modalità di condivisione dei dati, dei modelli, dei documenti e degli elaborati<a name="35-modalità-di-condivisione-dei-dati-dei-modelli-dei-documenti-e-degli-elaborati"></a>
 L’ACDat, così come previsto dalla UNI 11337:2017 – parti 1 e 5, sarà la piattaforma informatica a supporto del corretto flusso di informazioni tra i diversi soggetti partecipanti alla realizzazione dell’opera. In particolare, in aderenza a tale Norma, dovranno essere garantiti gli obiettivi minimi da essa richiamati (accessibilità, sicurezza, tracciabilità).
 
 Sarà utilizzata una struttura dell’ACDat che rispetti le 4 aree canoniche ISO 19650 (Lavorazione– Condivisione – Pubblicazione – Archiviazione).
 
 **Come si imposta questo ACDat? Cosa si dichiara di utilizzare? Servono delle immagini per la descrizione delle diverse fasi.**
-## 3.6 Procedure di verifica, validazione di modelli, oggetti e/o elaborati
+## 3.6 Procedure di verifica, validazione di modelli, oggetti e/o elaborati<a name="36-procedure-di-verifica-validazione-di-modelli-oggetti-eo-elaborati"></a>
 Dovranno essere programmate delle verifiche di coordinamento il cui scopo è quello di evidenziare tutte le interferenze (intra ed interdisciplinari) emerse attraverso le attività di model checking e clash detection. Potranno essere utilizzati strumenti differenti per il monitoraggio delle stesse a seconda dell’ambito di analisi. Successivamente ai modelli dovrà essere quindi allegata una scheda descrittiva delle principali attività svolte e delle problematiche eventualmente riscontrate.
 
 Una volta individuate tutte le interferenze/incoerenze si dovrà provvedere alla loro risoluzione lavorando direttamente nell’ambiente di model authoring. Nei prossimi paragrafi si riportano le modalità con le quali si richiede venga organizzata l’attività di coordinamento.
-### 3.6.1 Procedure di coordinamento e verifica dei modelli
+### 3.6.1 Procedure di coordinamento e verifica dei modelli<a name="361-procedure-di-coordinamento-e-verifica-dei-modelli"></a>
 Le procedure di verifica dei modelli, degli oggetti e degli elaborati, saranno svolte in ottemperanza a quanto prescritto dalla norma UNI 11337-5.
-#### Coordinamento modelli
+#### Coordinamento modelli<a name="coordinamento-modelli"></a>
 I livelli di coordinamento previsti dalla UNI 11337-5 e che devono essere eseguiti sono i seguenti:
 - coordinamento di primo livello (LC1);
 - coordinamento di secondo livello (LC2);
@@ -828,7 +830,7 @@ Questo controllo verrà effettuato ogni qualvolta il modello verrà caricato nel
 Nel **coordinamento di secondo livello** (**LC2**) verranno coordinati dati e informazioni tra più modelli disciplinari, attraverso la loro aggregazione simultanea in un unico modello, definito per l’appunto “Modello federato”. In questa fase, il BIM Coordinator, sotto la supervisione del BIM Manager, si occuperà del controllo di tutti i modelli disciplinari, in modo tale da poter evidenziare eventuali problematiche (interferenze o incoerenze informative) e individuare la migliore soluzione possibile in collaborazione con gli altri partecipanti al progetto.
 
 Con il **coordinamento di terzo livello** (**LC3**), verrà effettuato il controllo tra dati/informazioni/contenuti informativi generati da modelli BIM e dati/informazioni/contenuti informativi non generati da modelli BIM. Le figure che dovranno effettuare questo tipo di controllo sono il BIM Coordinator e i Progettisti Senior responsabili delle diverse discipline.
-#### Verifica e validazione dei modelli
+#### Verifica e validazione dei modelli<a name="verifica-e-validazione-dei-modelli"></a>
 I livelli di verifica previsti dalla UNI 11337-5 e che devono essere eseguiti sono i seguenti:
 - verifica di primo livello (LV1);
 - verifica di secondo livello (LV2);
@@ -845,7 +847,7 @@ Nella **verifica di secondo livello** (**LV2**) modelli informativi dovranno ess
 
 La **verifica di terzo livello** (**LV3**), da effettuarsi a carico della SA, si tratta di una verifica di tipo sia formale che sostanziale che viene svolta su quanto depositato nell'ACDat (Ambiente di
 Condivisione Dati).
-#### Verifiche delle interferenze geometriche
+#### Verifiche delle interferenze geometriche<a name="verifiche-delle-interferenze-geometriche"></a>
 Dovrà essere eseguito il controllo delle interferenze geometriche sia all'interno della stessa disciplina che fra differenti discipline attraverso particolari procedure che potranno prevedere livelli di approfondimento e tolleranze differenti a secondo della fase del progetto in cui ci si trova (ad esempio per un progetto definitivo potranno essere effettuate solo verifiche relative a macro-categorie di elementi edilizi, mentre per un progetto esecutivo le verifiche delle interferenze dovranno essere più approfondite).
 
 Si riportano di seguito alcuni valori di riferimento per le tolleranze geometriche da utilizzare nelle fasi di creazione e verifica dei modelli.
@@ -893,7 +895,7 @@ Tabella 20: Tolleranze ammesse per modelli As Built
 |    E    |        |        |         | 0-10mm | 5-10mm  | 5-10mm |
 |    P    |        |        |         |        | 5-10mm  | 5-10mm |
 |    F    |        |        |         |        |         | 0-10mm |
-### 3.6.2 Processo di analisi e risoluzione delle interferenze e delle incoerenze informative
+### 3.6.2 Processo di analisi e risoluzione delle interferenze e delle incoerenze informative<a name="362-processo-di-analisi-e-risoluzione-delle-interferenze-e-delle-incoerenze-informative"></a>
 Qualora l'analisi dei risultati in seguito ad un controllo **All vs All** (analisi contemporanea di tutti i modelli) risultasse di difficile gestione, il BIM Coordinator può suddividere i test di interferenza
 (**one vs one**) al fine di:
 - rendere più agevole l'identificazione di tutti i clash rilevati;
@@ -909,18 +911,18 @@ E’ buona prassi predisporre un documento riassuntivo (attività di reporting) 
 - risoluzione avvenuta delle incoerenze e/o interferenze rilevate all'interno dei modelli o degli oggetti, o degli elaborati informativi;
 - assegnazione della risoluzione di ogni singola interferenza degli oggetti o dei modelli ai modellatori responsabili delle informazioni;
 - eventuale determinazione di nuova riunione, nel momento in cui le interferenze/incoerenze siano relative a più discipline, quindi coinvolgano più modellatori delle informazioni all'interno della stessa fase processuale.
-## 3.7 Modalità di gestione informativa della programmazione (4D)
+## 3.7 Modalità di gestione informativa della programmazione (4D)<a name="37-modalità-di-gestione-informativa-della-programmazione-4d"></a>
 Nella presente sezione si richiede di gestire i dati di programmazione, la schedulazione delle risorse e altro dell’intervento tramite l’utilizzo di strumenti che possano essere collegati ai modelli grafici.
 
 Al fine di pianificare e controllare le attività per la realizzazione del servizio, sarà necessario predisporre un pset di parametri proprietari basato su WBS (Work Breakdown Structure) come già indicato. Il modello informativo dovrà essere quindi sviluppato prevedendo la suddivisione delle opere in tratti elementari omogenei per tipologia, in maniera da consentire aggregazioni e/o disaggregazioni secondo la suddivisione per WBS. Ad ogni oggetto del modello informativo grafico sono associati parametri di tipo testo coerenti con la WBS completa di schedulazione in modo da garantirne una univoca correlazione temporale delle lavorazioni.
-## 3.8 Modalità di gestione informativa economica (5D)
+## 3.8 Modalità di gestione informativa economica (5D)<a name="38-modalità-di-gestione-informativa-economica-5d"></a>
 Nella presente sezione si richiede la gestione dei dati di costo dell’intervento tramite l’utilizzo di strumenti che possano essere collegati ai modelli grafici.
 Il modello informativo dovrà essere sviluppato prevedendo la suddivisione delle opere, in maniera da consentire aggregazioni e/o disaggregazioni secondo la suddivisione per WBS, e dovrà essere sviluppato ad un livello di definizione tale che ogni elemento sia identificato in forma, tipologia, qualità, dimensione e prezzo.
 
 Ad ogni oggetto del modello informativo saranno quindi associati parametri coerenti sia con la struttura data dalla WBS, completa delle voci di lavorazioni in modo da garantirne una sicura correlazione, e dai parametri di QTO ereditati dallo schema IFC.
-## 3.9 Modalità di gestione informativa delle fasi di esercizio dell'opera (6D)
+## 3.9 Modalità di gestione informativa delle fasi di esercizio dell'opera (6D)<a name="39-modalità-di-gestione-informativa-delle-fasi-di-esercizio-dellopera-6d"></a>
 La gestione e manutenzione dell’opera finita è parte integrante della metodologia BIM. I modelli grafici dovranno quindi contenere tutte quelle informazioni di tipo statico necessarie alla manutenzione e gestione degli asset contenuti all'interno del bene. Un set minimo di parametri, che verrà specificato in allegato, può essere ricavato dallao standard COBie (Construction Operations Building Information Exchange) v3 . Tale standard, da cui è stata ricavata anche una Model View Definition, è stato preso come input per la predisposizione dei parametri inclusi all’interno del template, i quali potranno essere modificati ed ampliati a seconda delle esigenze dell’Area Tecnica.
-## 3.10 Modalità di archiviazione e consegna finale di modelli
+## 3.10 Modalità di archiviazione e consegna finale di modelli<a name="310-modalità-di-archiviazione-e-consegna-finale-di-modelli"></a>
 Una volta superata la verifica di congruenza, tutti i dati, le informazioni e i contenuti informativi verranno archiviati nella directory "Archiviazione" garantendone l’accessibilità nel tempo.
 
 Nell’ambito della modellazione tali modelli informativi potranno essere realizzati con piattaforme software BIM commerciali compatibili con formati di interscambio open, come l’Industry Foundation Classes (IFC) secondo gli standard definiti da Building SMART International e come disposto dal vigente D.lgs. 50/2016.
