@@ -1,5 +1,16 @@
-# Allegato A
-## A.1 Codifica Famiglie
+# Index
+- [Allegato A](#allegato-a)
+   * [A.1 Codifica Famiglie](#a1-codifica-famiglie)
+   * [A.2 Codifica Materiale](#a2-codifica-materiale)
+   * [A.3 Codifica Locali/Zone](#a3-codifica-localizone)
+   * [A.4 Codifica Livelli](#a4-codifica-livelli)
+- [Allegato B](#allegato-b)
+   * [B.1 Parametri IFC](#b1-parametri-ifc)
+      + [B.1.1 Informazioni sul progetto](#b11-informazioni-sul-progetto)
+      + [B.1.2 Informazioni sugli elementi](#b12-informazioni-sugli-elementi)
+   * [B.2 Parametri Custom](#b2-parametri-custom)
+# Allegato A<a name="allegato-a"></a>
+## A.1 Codifica Famiglie<a name="a1-codifica-famiglie"></a>
 Ciascun elemento dei diversi modelli dovrà essere identificato tramite una nomenclatura e codifica univoca per ciascuna categoria di componente. Per la separazione tra un campo e l’altro sarà utilizzato il carattere “-“ (core). Non sarà possibile utilizzare spazi per la separazione delle parole dello stesso campo, in questo caso utilizzare il carattere “\_” (underscore) oppure il sistema CamelCase. Un sistema non esclude l’altro nell’uso della convenzione.
 
 > (Funzione Tipo)\_(Funzione sotto-tipo)\_(Descrizione)\_(Numero Progressivo)
@@ -48,6 +59,7 @@ Tabella a. Funzione Tipo
 |  DTF   | Dispositivo di trattamento del flusso |        [IfcFlowTreatmentDevice](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFlowTreatmentDevice.htm)        |                   |
 |  MEL   |          Materiale elettrico          |          [IfcElectricAppliance](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElectricAppliance.htm)          |                   |
 |  TRA   |          Elemento trasporto           |           [IfcTransportElement](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTransportElement.htm)           |                   |
+
 Il codice di contrassegno tipo dovrà essere utilizzato per la l’identificazione degli elementi nella produzione degli elaborati.
 
 Il codice funzione sottotipo può essere modificato e integrato in corso d’opera qualora siano riscontrate delle incongruenze o mancanze. Tale codifica deriva dalla classificazione degli elementi all’interno dello schema IFC, infatti ogni codice sotto-tipo equivale ad una classe IFC o ad un enumerativo. Come definizione di partenza si assume:
@@ -69,7 +81,7 @@ Tabella b. Codice Sottotipo
 |                                                 |  COP   | Copertura                               |                                                                                                                         [IfcCovering.ROOFING](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                          |
 |                                                 |  ISO   | Isolamento                              |                                                                                                                        [IfcCovering.INSULATION](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                        |
 |                                                 |  MEM   | Membrana                                |                                                                                                                         [IfcCovering.MEMBRANE](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                         |
-|                                                 |  BTS   | Battiscopa                              |                                                                                                           [IfcCovering.SKIRTINGBOARD]([IfcCovering.CEILING](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm))                                                                                                           |
+|                                                 |  BTS   | Battiscopa                              |                                                                                                                      [IfcCovering.SKIRTINGBOARD](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                       |
 |                                                 |  CTS   | Controsoffitto                          |                                                                                                                         [IfcCovering.CEILING](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                          |
 |                                                 |  CRN   | Cornice                                 |                                                                                                                         [IfcCovering.MOLDING](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                          |
 |                                                 |  GUA   | Guaina                                  |                                                                                                                         [IfcCovering.SLEEVING](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcCoveringTypeEnum.htm)                                                                                                                         |
@@ -219,6 +231,7 @@ Tabella b. Codice Sottotipo
 |                                                 |  IDR   | Idrante                                 |                                                                                                        [IfcFireSuppressionTerminal.FIREHYDRANT](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFireSuppressionTerminalTypeEnum.htm)                                                                                                         |
 |                                                 |  SPK   | Sprinkler                               |                                                                                                         [IfcFireSuppressionTerminal.SPRINKLER](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFireSuppressionTerminalTypeEnum.htm)                                                                                                          |
 |                                                 |  AVV   | Avvolgitore Tubo                        |                                                                                                         [IfcFireSuppressionTerminal.HOSEREELT](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFireSuppressionTerminalTypeEnum.htm)                                                                                                          |
+
 Per il campo Descrizione usare una descrizione letterale dell'elementocon la quale indicare a scelta:
 -   spessore;
 -   pattern;
@@ -239,7 +252,7 @@ In caso di nidificazione di elementi i sottocomponenti di una famiglia dovranno 
 > CMP-(Funzione Tipo)-(Funzione Sottotipo)-(Numero Progressivo)-(Descrizione)
 
 **N.B.** Inserire sempre prima l’altezza ed usare quote in mm/cm a seconda dell’unità di misura consona all’oggetto di riferimento.
-## A.2 Codifica Materiale
+## A.2 Codifica Materiale<a name="a2-codifica-materiale"></a>
 La codifica dei materiali è composta da 4 campi come mostrato di seguito:
 
 > (Dettaglio)-(Codice Materiale)-(Codice sottocategoria)-(Descrizione)-(Progressivo)
@@ -294,6 +307,7 @@ Tabella d. Codice Materiale
 |       VGT        |     Vegetazione      |
 |       VNL        |       Vinilico       |
 |       VTR        |        Vetro         |
+
 La sottocategoria dei materiali sarà composta da 3 caratteri che indicheranno la funziona alla quale il materiale è associato o la tipologia con cui il materiale si presenta in produzione (pannelli, piastrelle, rete, rotolo, …). Di seguito un elenco esplicativo e non esaustivo delle voci afferenti al campo.
 
 Tabella e. Codice Sottocategoria
@@ -318,7 +332,7 @@ Tabella e. Codice Sottocategoria
 Il campo Descrizione conterrà in breve le caratteristiche del materiale. Le parole contenute all’interno del campo saranno concatenate tra loro attraverso la notazione CamelCase oppure l’utilizzo del carattero “\_” (underscore). Entrambi i sistemi possono essere utilizzati contemporaneamente.
 
 **N.B.** Si ricorda che per la creazione di un nuovo materiale si deve sempre passare dal comando “crea nuovo materiale” invece che duplicarne uno esistente, altrimenti quando andremo a modificare un parametro questo mi modificherà automaticamente a tutti i materiali collegati dalla duplicazione.
-## A.3 Codifica Locali/Zone
+## A.3 Codifica Locali/Zone<a name="a3-codifica-localizone"></a>
 Le zone e/o i locali dovranno avere una loro denominazione specifica. In particolare, dovranno essere denominate con la concatenazione di parametri in grado di consentirne l’individuazione univoca e l’inclusione nei processi aggregativi e disaggregativi.
 
 Il codice spazio è composto dai seguenti campi:
@@ -332,7 +346,7 @@ Tabella f. Codice Uso
 |    ARC     | Archivio |
 |            |          |
 |            |          |
-## A.4 Codifica Livelli
+## A.4 Codifica Livelli<a name="a4-codifica-livelli"></a>
 I livelli dei settori per i quali è già presente il modello architettonico andranno copiati (comando copia/controlla) all’interno del proprio modello disciplinare e si cerca di evitare la creazioni di ulteriori livelli.
 
 **N.B.** in caso fosse necessario inserire un nuovo livello valutare prima se è possibile utilizzare un piano di riferimento o un offset da un altro livello.
@@ -346,10 +360,11 @@ Tabella g. Codice Livello
 |  P01   |  Primo Piano  |
 |  P02   | Secondo Piano |
 |        |               |
+
 **N.B.** Nel caso in cui siano presenti più livelli di lavoro che non corrispondono ai livelli degli impalcati utilizzare la quota relativa su cui si attesta il livello.
-# Allegato B
-## B.1 Parametri IFC
-### B.1.1 Informazioni sul progetto
+# Allegato B<a name="allegato-b"></a>
+## B.1 Parametri IFC<a name="b1-parametri-ifc"></a>
+### B.1.1 Informazioni sul progetto<a name="b11-informazioni-sul-progetto"></a>
 Di seguito si elencano i parametri presenti nello schema IFC che dovranno essere compilati all’interno di ogni modello disciplinare al fine di identificare la sua struttura gerarchica-spaziale. Si ritiene che l’inserimento di tale set minimo di parametri sia necessario al fine di predisporre un modello utile per la gestione di un immobile.
 
 Tabella h. Parametri *IfcProject*
@@ -375,6 +390,7 @@ Tabella i. Parametri *IfcSite*
 | [Pset_LandRegistration](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_LandRegistration.htm) |    *LandID*     |        IfcIdentifier         | Opz.  |                                                                                                                                                                                    Identification number assigned by the statutory registration authority to a land parcel.                                                                                                                                                                                    |
 |                                                                                                                        | *IsPermanentID* |          IfcBoolean          | Opz.  |                                                                                                                                                                               Indicates whether the identity assigned to the object is permanent (= TRUE) or temporary (=FALSE).                                                                                                                                                                               |
 |                                                                                                                        |  *LandTitleID*  |        IfcIdentifier         | Opz.  |                                                                                                                                                                             Identification number assigned by the statutory registration 	authority to the title to a land parcel.                                                                                                                                                                             |
+
 **Oss.** Se il progetto contiene una topografia in questo livello è possibile assegnare anche le proprietà IFC che sostituiranno le proprietà indicate in precedenza, specificate in Informazioni sul Progetto (IfcDescription, IfcObjectType, IfcName). L’operazione può essere eseguita anche con LongName e LandTitleNumber.
 
 Tabella j. Parametri *IfcBuilding*
@@ -406,6 +422,7 @@ Tabella j. Parametri *IfcBuilding*
 |                                                                                                                    |   *YearOfConstruction*    |     IfcLabel      |  ✔️   |                                                                                                                                                                                          Year of construction of this building, including expected year of completion.                                                                                                                                                                                           |
 |                                                                                                                    | *YearOfLastRefurbishment* |     IfcLabel      | Opz.  |                                                                                                                                                                             Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works).                                                                                                                                                                              |
 |                                                                                                                    |      *IsLandmarked*       |    IfcLogical     |  ✔️   |                                                                                                                                                                                        This builing is listed as a historic building (TRUE), or not (FALSE), or unknown.                                                                                                                                                                                         |
+
 **Oss.** Lo schema IFC supporta più edifici per IfcSite ma i tradizionali software di BIM authoring ne possono esportare solo uno per volta
 
 Tabella k. Parametri *IfcBuildingStorey*
@@ -421,8 +438,9 @@ Tabella k. Parametri *IfcBuildingStorey*
 |                                                                                                                                              | *ElevationOfFFLRelative* | IfcLengthMeasure  |  ✔️  |                                                     Elevation of the top surface of the finished floor level given in elevation above the local zero height. If the level varies and 	there is no significantly more prominent elevation, then this property may be omitted. In case of any inconsistency with the geometric positioning of the top surface, the geometric	representation takes precedence.                                                      |
 | [Qto_BuildingStoreyBaseQuantities](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Qto_BuildingStoreyBaseQuantities.htm) |       *NetHeight*        | IfcQuantityLength |  ✔️  |                                                                                                                                 Standard net height of this storey, from the top surface of the construction floor, to the bottom surface of the construction floor or roof above. Only provided is there is a constant height.                                                                                                                                  |
 |                                                                                                                                              |      *NetFloorArea*      |  IfcQuantityArea  |  ✔️  |                                                                                        Sum of all net usable floor areas. It excludes the area of construction elements within the building storey. May be provided in addition to the quantities of the spaces assigned to the storey. In case of inconsistencies, the individual quantities of spaces take precedence.                                                                                         |
+
 **Oss.** Ogni livello ha un parametro si/no per indicare se tale livello equivale o meno ad un building storey, se non segnato gli elementi assegnati a quel livello verranno assegnati al livello inferiore.
-### B.1.2 Informazioni sugli elementi
+### B.1.2 Informazioni sugli elementi<a name="b12-informazioni-sugli-elementi"></a>
 
 Quando si definiscono delle proprietà all’interno di elementi parametrici è necessario fare riferimento ad una _naming convention_ così che sia sempre possibile effettuare automaticamente una validazione di un determinato modello tramite software di *model checking*. Inoltre, è necessario, per quanto possibile, attenersi ai parametri già presenti ed implementati all'interno dello schema IFC. Questo permetterà di avere un'esportazione più leggera e maggiormente in linea con gli standard internazionali. Qualora un parametro necessario alla modellazione non fosse presente nello schema IFC si può ricorrere a Pset personalizzati da creare tramite file di testo.
 
@@ -453,6 +471,7 @@ Tabella l: Parametri *IfcSpace*
 |                                                                                                                                          |   *NetCeilingArea*    |  IfcQuantityArea  |  ✔️   |                                                                                                                  Sum of all ceiling areas of the space. It excludes the area covered by elements inside the space (columns, inner walls, etc.). The ceiling area is the real (and not the projected) area (e.g. in case of sloped ceilings).                                                                                                                   |
 |                                                                                                                                          |    *GrossWallArea*    |  IfcQuantityArea  |  ✔️   |                                                                                                                            Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It includes the area covered by elements inside the wall area (doors, windows, other openings, etc.).                                                                                                                            |
 |                                                                                                                                          |     *NetWallArea*     |  IfcQuantityArea  |  ✔️   |                                                                                                                            Sum of all wall (and other vertically bounding elements, like columns) areas bounded by the space. It excludes the area covered by elements inside the wall area (doors, windows, other openings, etc.).                                                                                                                            |
+
 Tabella m: Parametri *IfcCovering*
 
 |                                                               Pset                                                               |    Parametro     |        Tipo         | Obbl. |                                                                                                                                                                                                                             Note                                                                                                                                                                                                                              |
@@ -483,6 +502,7 @@ Tabella n: Parametri *IfcWindow*
 |        [Qto_WindowBaseQuantities](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Qto_WindowBaseQuantities.htm)        |        *Width*        |       IfcQuantityLength        |  ✔️   |                                                                                                                                   The width of the object. Only given, if the object has constant thickness (prismatic).  	Total outer width of the window lining. It should only be provided, if it is a rectangular window.                                                                                                                                    |
 |                                                                                                                                            |       *Height*        |       IfcQuantityLength        |  ✔️   |                                                                                                                                                                    Characteristic height. Total outer height of the window lining. It should only be provided, if it is a rectangular window.                                                                                                                                                                    |
 |                                                                                                                                            |        *Area*         |        IfcQuantityArea         |  ✔️   |                                                                                                                                                                                          Calculated area for the object.  Total area of the outer lining of the window.                                                                                                                                                                                          |
+
 Tabella o: Parametri *IfcDoor*
 
 |                                                                    Pset                                                                    |       Parametro       |           Tipo           | Obbl. |                                                                                                                                                                                                                             Note                                                                                                                                                                                                                              |
@@ -503,6 +523,7 @@ Tabella o: Parametri *IfcDoor*
 |          [Qto_DoorBaseQuantities](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Qto_DoorBaseQuantities.htm)          |        *Width*        |    IfcQuantityLength     |  ✔️   |                                                                                                                                  The width of the object. Only given, if the object has constant thickness (prismatic).  	Total outer width of the window lining. It should only be provided, if it is a rectangular window.                                                                                                                                  |
 |                                                                                                                                            |       *Height*        |    IfcQuantityLength     |  ✔️   |                                                                                                                                                                  Characteristic height. Total outer height of the window lining. It should only be provided, if it is a rectangular window.                                                                                                                                                                   |
 |                                                                                                                                            |        *Area*         |     IfcQuantityArea      |  ✔️   |                                                                                                                                                                                        Calculated area for the object.   Total area of the outer lining of the window.                                                                                                                                                                                        |
+
 Tabella p: Parametri Elementi MEP
 
 |                                                                    Pset                                                                    |    Parametro     |     Tipo      | Obbl. |                                                                                                                                                                                                                               Note                                                                                                                                                                                                                               |
@@ -516,6 +537,7 @@ Tabella p: Parametri Elementi MEP
 |                                                                                                                                            | *ModelReference* |   IfcLabel    |  ✔️   |                                                                                                                                                                 The model number or designator of the product model (or product line) as assigned by the manufacturer of the manufactured item.                                                                                                                                                                  |
 |                                                                                                                                            |   *Manufacter*   |   IfcLabel    |  ✔️   |                                                                                                                                                                                                  The organization that manufactured and/or assembled the item.                                                                                                                                                                                                   |
 |                                                                                                                                            | *ProductionYear* |   IfcLabel    |  ✔️   |                                                                                                                                                                                                         The year of production of the manufactured item.                                                                                                                                                                                                         |
+
 Tabella q: Parametri *IfcFurniture*
 
 |                                                                    Pset                                                                    |    Parametro     |         Tipo         | Obbl. |                                                                                                                                                                                                                             Note                                                                                                                                                                                                                              |
@@ -529,12 +551,14 @@ Tabella q: Parametri *IfcFurniture*
 |                                                                                                                                            | *ModelReference* |       IfcLabel       |  ✔️   |                                                                                                                                                                The model number or designator of the product model (or product line) as assigned by the manufacturer of the manufactured item.                                                                                                                                                                |
 |                                                                                                                                            |   *Manufacter*   |       IfcLabel       |  ✔️   |                                                                                                                                                                                                 The organization that manufactured and/or assembled the item.                                                                                                                                                                                                 |
 |                                                                                                                                            | *ProductionYear* |       IfcLabel       |  ✔️   |                                                                                                                                                                                                       The year of production of the manufactured item.                                                                                                                                                                                                        |
+
  Tabella r: Parametri *IfcZone*
 
 |         Pset         |   Parametro   |   Tipo   | Obbl. |                                                                                                 Note                                                                                                  |
 |:--------------------:|:-------------:|:--------:|:-----:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | **Entity Attribute** |    *Name*     | IfcLabel |  ✔️   | Optional name for use by the participating software systems or 			users. For some subtypes of IfcRoot the insertion of the Name 			attribute may be required. This would be enforced by a where rule. |
 |                      | *Description* | IfcText  |  ✔️   |                                                                Optional description, provided for exchanging informative 			comments.                                                                 |
+
 Tabella s: Parametri *IfcSystem*
 
 |         Pset         |    Parametro     |        Tipo         | Obbl. |                                                                                                 Note                                                                                                  |
@@ -542,7 +566,7 @@ Tabella s: Parametri *IfcSystem*
 | **Entity Attribute** |      *Name*      |      IfcLabel       |  ✔️   | Optional name for use by the participating software systems or 			users. For some subtypes of IfcRoot the insertion of the Name 			attribute may be required. This would be enforced by a where rule. |
 |                      |  *Description*   |       IfcText       |  ✔️   |                                                                Optional description, provided for exchanging informative 			comments.                                                                 |
 |                      | *PredefinedType* | Ifc\*SystemTypeEnum |  ✔️   |                                       A list of types to further identify the object. Some property sets may be specifically applicable to one of these types.                                        |
-## B.2 Parametri Custom
+## B.2 Parametri Custom<a name="b2-parametri-custom"></a>
 
 Oltre ai parametri propri dello schema IFC si ritiene necessario inserire altri parametri personalizzati per venire incontro alle esigenze informative dell’Area Tecnica e definire una WBS degli elementi.
 
@@ -562,6 +586,7 @@ Tabella t: Parametri custom - Pset \"WBS\"
 |                      |   *WBS_10_Lavorazione01*   | IfcText | Opz.  | Descrive la localizzazione del bene a livello di Lavorazione 			(codice Prezzario Regionale) |
 |                      |   *WBS_11_Lavorazione02*   | IfcText | Opz.  | Descrive la localizzazione del bene a livello di Lavorazione 			(codice Prezzario Regionale) |
 |                      |   *WBS_12_Lavorazione03*   | IfcText | Opz.  | Descrive la localizzazione del bene a livello di Lavorazione 			(codice Prezzario Regionale) |
+
 Tabella u: Parametri custom - Pset \"UniFi\"
 
 |       Classe IFC       |            Pset            |            Parametro            |    Tipo    | Obbl. |                   Equivale a                   |
