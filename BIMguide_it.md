@@ -752,7 +752,7 @@ PyRevit è un plugin gratico che offre sia delle funzionalità di base ma che pe
 
 > **sheet-number** TAB **sheet-name** (es. A311 SHEET NAME)
 
-![Figura 18: Pannello per la creazione di tavole tramite il comando "Batch Sheet Maker"](images/pyRevit_BatchSheetMaker_01.png "Figura 18: Pannello per la creazione di tavole tramite il comando "Batch Sheet Maker")
+![Figura 18: Pannello per la creazione di tavole tramite il comando "Batch Sheet Maker"](images/pyRevit_BatchSheetMaker_01.png "Figura 18: Pannello per la creazione di tavole tramite il comando Batch Sheet Maker")
 
 Se sono presenti più tavole con lo stesso nome può essere dato un range della numerazione tramite la formattazione A103—A106 o A103::A106
 
