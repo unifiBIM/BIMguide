@@ -1,4 +1,4 @@
-# BIMguide
+# BIM guide
 Il presente documento ha come obiettivo la condivisione delle procedure e delle metodologie BIM che dovranno essere implementate dagli studenti del corso magistrale di Ingegneria Edile e dagli studenti del [Master BIM](https://www.lbimunifi.it/) al fine di gestire digitalmente l'intero ciclo di vita degli immobili a loro assegnati. Questo documento si allinea ad un processo di gestione informativa in sviluppo da parte dell'Università degli Studi di Firenze ed aderisce alle prescrizioni normative italiane ed internazionali (UNI EN ISO 19650, UNI EN 17412, UNI 11337) anche attraverso l'utilizzo della metodologia *openBIM*, con l'obiettivo della creazione di un "Patrimonio Digitale" costituito dall'insieme dei modelli e delle informazioni relative agli immobili selezionati.
 
 Le seguenti Linee Guida sono organizzate in **4 sezioni principali** come segue:
@@ -12,6 +12,6 @@ Le seguenti Linee Guida sono organizzate in **4 sezioni principali** come segue:
 
 Qualsiasi correzione o suggerimento è ben accolto. E' possibile fare un fork del repository o mandare delle issue.
 
-# Autores
+# Autori
 * [Andrea Bongini](andrea.bongini@unifi.it)
 * [Carlo Biagini](carlo.biagini@unifi.it)
