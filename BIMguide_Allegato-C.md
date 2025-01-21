@@ -1,6 +1,6 @@
 # Index
 
-- [C.1 Introduzione e scopo](#c1-introduzione-e-scopo)
+- [C.1 Introduzione allo standard COBie](#c1-introduzione-cobie)
 - [C.2 Struttura e Formato](#c2-struttura-e-formato)
   - [C.2.1 Terminologia](#c21-terminologia)
 - [C.3 Fase di Riferimento](#c3-fase-di-riferimento)
@@ -27,7 +27,7 @@
     - [C.4.2.18 Tabella Coordinate](#c4218-tabella-coordinate)
     - [C.4.2.19 Tabella PickList](#c4219-tabella-picklist)
 
-# C.1 Introduzione e scopo<a name="c1-introduzione-e-scopo"></a>
+# C.1 Introduzione allo standard COBie<a name="c1-introduzione-cobie"></a>
 
 Il National BIM Standard-United States® (NBIMS-US™) _Construction to Operations Building information exchange_ ([COBie](https://www.nibs.org/nbims/v3/cobie#COBie1)) è un formato di dati e uno standard di processo. Il suo scopo è quello di assistere i team di progetto nell'acquisizione e nella consegna dei dati relativi ai beni manutenibili di una struttura in un formato digitale, con l'obiettivo di ridurre o addirittura eliminare il ritardo tra la consegna (dopo la progettazione e la costruzione) e il momento in cui il sistema di gestione delle strutture può iniziare le operazioni e la manutenzione di tali beni **mantenibili**. Si tratta di un insieme combinato di tutti gli spazi, i prodotti e le apparecchiature presenti nei disegni di progetto associati, nonché di una raccolta di informazioni relative alla costruzione, alle operazioni e alla manutenzione (O&M) e alla messa in servizio acquisite durante la costruzione.
 
@@ -47,7 +47,7 @@ Tabella c1. Struttura COBie
 | :------------------: | :------------------: | :---------------: | :------------------: | :------------------: |
 |       FACILITY       |        LEVEL         |       Type        |       PACKAGE        |       DOCUMENT       |
 |       COMPANY        |         ZONE         |     COMPONENT     |         JOB          |       RESOURCE       |
-|                      |      SPACEType       |      SYSTEM       |        EVENT         |       PICKLIST       |
+|                      |      SPACETYPE       |      SYSTEM       |        EVENT         |       PICKLIST       |
 |                      |        SPACE         |     ATTRIBUTE     |     INSTRUCTION      |                      |
 |                      |      COORDINATE      |                   |         RISK         |                      |
 
