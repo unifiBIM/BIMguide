@@ -7,7 +7,25 @@
 - [C.4 Data Schema](#c4-data-schema)
   - [C.4.1 Data Tables](#c41-data-tables)
   - [C.4.2 Data Fields](#c42-data-fields)
-- [C.5 Interoperabilità IFC](#c5-interoperabilità-ifc)
+    - [C.4.2.1 Tabella Instruction](#c421-tabella-instruction)
+    - [C.4.2.2 Tabella Company](#c422-tabella-company)
+    - [C.4.2.3 Tabella Facility](#c423-tabella-facility)
+    - [C.4.2.4 Tabella Level](#c424-tabella-level)
+    - [C.4.2.5 Tabella SpaceType](#c425-tabella-spacetype)
+    - [C.4.2.6 Tabella Space](#c426-tabella-space)
+    - [C.4.2.7 Tabella Zone](#c427-tabella-zone)
+    - [C.4.2.8 Tabella Type](#c428-tabella-type)
+    - [C.4.2.9 Tabella Element](#c429-tabella-element)
+    - [C.4.2.10 Tabella System](#c4210-tabella-system)
+    - [C.4.2.11 Tabella Resuorces](#c4211-tabella-resuorces)
+    - [C.4.2.12 Tabella Job](#c4212-tabella-job)
+    - [C.4.2.13 Tabella Event](#c4213-tabella-event)
+    - [C.4.2.14 Tabella Package](#c4214-tabella-package)
+    - [C.4.2.15 Tabella Risk](#c4215-tabella-risk)
+    - [C.4.2.16 Tabella Document](#c4216-tabella-document)
+    - [C.4.2.17 Tabella Attribute](#c4217-tabella-attribute)
+    - [C.4.2.18 Tabella Coordinate](#c4218-tabella-coordinate)
+    - [C.4.2.19 Tabella PickList](#c4219-tabella-picklist)
 
 # C.1 Introduzione e scopo<a name="c1-introduzione-e-scopo"></a>
 
@@ -123,65 +141,50 @@ I Data Fields possono essere correlati ad altri Data Fields del database present
 Ad esempio, il valore del campo “Manufacturer” della tabella dati “Type” fa riferimento al campo “Name” della tabella “Company”. In questo modo, una modifica al campo "Nome" della tabella "Company" si propagherà a tutte le altre tabelle di dati che vi fanno riferimento.
 
 **Status**
-Ogni tabella e ogni data Fields include uno stato relativo al relativo requisito; ne sono disponibili otto. Quando COBie viene consegnato in un foglio di calcolo (es. LibreOffice Calc o Microsoft Excel), ogni requisito può essere codificato a colori per facilitarne il riconoscimento.
+Ogni tabella e ogni data Fields include uno stato relativo al relativo requisito; ne sono disponibili otto. Quando COBie viene consegnato in un foglio di calcolo (es. LibreOffice Calc o Microsoft Excel), ogni requisito può essere codificato a colori per facilitarne il riconoscimento:
 
-    **Required**
-    	Tabelle di dati e campi di dati che devono sempre essere presenti in ogni Deliverable COBie.
-    	Colore SpreadsheetML: #FFFF99
-
-    **Required (Reference to Another Data Field)**
-    	Campi dati che sono obbligatori e il cui valore fa riferimento a un altro campo dati, sia nella stessa tabella dati che in una tabella dati diversa (compresa la tabella dati PickList). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
-    	Colore SpreadsheetML: #FFCC99
-
-    **Only If Specified in the Contract**
-    	Tabelle di dati e campi di dati facoltativi, richiesti solo se specificati nel contratto relativo ai Deliverable COBie.
-    	Colore SpreadsheetML: #CCFFCC
-
-    **Only If Specified in the Contract (Reference to Another Data Field)**
-    	I campi di dati sono obbligatori solo se specificati nel contratto e il cui valore fa riferimento a un altro campo di dati, sia nella stessa tabella di dati che in una tabella di dati diversa (compresa la tabella di dati PickList che ha uno stato di “Solo se specificato nel contratto”). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
-    	Colore SpreadsheetML: #CCFFFF
-
-    **External Reference**
-    	I campi di dati i cui valori contengono informazioni che consentono di risalire al software che ha generato le informazioni (sistema di origine). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
-    	Colore SpreadsheetML: #CC99FF
-
-    **Secondary Information When Preparing Product Data**
-    	Tabelle di dati e campi di dati facoltativi, richiesti solo se specificati nel contratto relativo ai Deliverable COBie, che includono informazioni secondarie normalmente non contenute in un Deliverable COBie.
-    	Colore SpreadsheetML: #C0C0C0
-
-    **Regional, Owner, or Product-specific Data**
-    	Tabelle di dati e campi di dati che sono richiesti a causa di requisiti regionali, del proprietario o specifici del prodotto.
-    	Colore SpreadsheetML: #99CCFF
-
-    **Not Used**
-    	Tabelle di dati o campi di dati non utilizzati nel Deliverable COBie.
-    	Colore SpreadsheetML: #000000
+- **Required**. Tabelle di dati e campi di dati che devono sempre essere presenti in ogni Deliverable COBie.
+  Colore SpreadsheetML: #FFFF99
+- **Required (Reference to Another Data Field)**. Campi dati che sono obbligatori e il cui valore fa riferimento a un altro campo dati, sia nella stessa tabella dati che in una tabella dati diversa (compresa la tabella dati PickList). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
+  Colore SpreadsheetML: #FFCC99
+- **Only If Specified in the Contract**. Tabelle di dati e campi di dati facoltativi, richiesti solo se specificati nel contratto relativo ai Deliverable COBie.
+  Colore SpreadsheetML: #CCFFCC
+- **Only If Specified in the Contract (Reference to Another Data Field)**. I campi di dati sono obbligatori solo se specificati nel contratto e il cui valore fa riferimento a un altro campo di dati, sia nella stessa tabella di dati che in una tabella di dati diversa (compresa la tabella di dati PickList che ha uno stato di “Solo se specificato nel contratto”). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
+  Colore SpreadsheetML: #CCFFFF
+- **External Reference**. I campi di dati i cui valori contengono informazioni che consentono di risalire al software che ha generato le informazioni (sistema di origine). Questo stato non viene utilizzato per le tabelle di dati, ma solo per i campi di dati.
+  Colore SpreadsheetML: #CC99FF
+- **Secondary Information When Preparing Product Data**. Tabelle di dati e campi di dati facoltativi, richiesti solo se specificati nel contratto relativo ai Deliverable COBie, che includono informazioni secondarie normalmente non contenute in un Deliverable COBie.
+  Colore SpreadsheetML: #C0C0C0
+- **Regional, Owner, or Product-specific Data**. Tabelle di dati e campi di dati che sono richiesti a causa di requisiti regionali, del proprietario o specifici del prodotto.
+  Colore SpreadsheetML: #99CCFF
+- **Not Used**. Tabelle di dati o campi di dati non utilizzati nel Deliverable COBie.
+  Colore SpreadsheetML: #000000
 
 ## C.4.1 Data Tables<a name="c41-data-tables"></a>
 
-Le tabelle di dati, definite nel capitolo [C.2 Struttura e Formato](#c2-struttura-e-formato), hanno ciascuna uno scopo e sono organizzate in una gerarchia relativa a un impianto, una struttura o un gruppo di strutture.
+Le tabelle di dati, definite nel capitolo [C.2 Struttura e Formato](#c2-struttura-e-formato), hanno ciascuna uno scopo e sono organizzate in una gerarchia relativa a un impianto, una struttura o un gruppo di strutture:
 
 ![Figura c1: Data Tables](images/COBie_v3_01.png "Figura c1: Data Tables")
 
-**Instruction** (==REQUIRED==). Fornisce istruzioni scritte relative al database COBie, ma contiene anche le informazioni generali di presentazione per un particolare consegna.
-**Company** (==REQUIRED==). Rappresenta le informazioni relative a un'azienda a cui si fa riferimento altrove in un un'altra tabella. Questa tabella si chiamava “Contact” nelle versioni precedenti di COBie.
-**Facility** (==REQUIRED==). Fornisce informazioni relative all'impianto, alla struttura o al gruppo di strutture (nel caso di progetti infrastrutturali) a cui la consegna fa riferimento. In questa tabella è ammesso un solo valore (_record_).
-**Level** (==REQUIRED==). Contiene informazioni relative ai livelli verticali di un impianto o, nel caso di progetti infrastrutturali, alle aree geografiche come il sito circostante un impianto/struttura, un corridoio ferroviario o autostradale, ecc. Questa tabella era chiamata “Floor” nelle versioni precedenti di COBie.
-**SpaceType** (==REQUIRED==). Fornisce informazioni relative ai diversi tipi di spazi che compongono un impianto, una struttura o un gruppo di strutture per questo deliverable COBie. Ad esempio: “Office”, ‘Mechanical’ o ‘Circulation’. Si tratta di una nuova tabella di dati per il COBie V3.
-**Space** (==REQUIRED==). Gli spazi rappresentano la suddivisione dei _Levels_ in _Rooms/Areas_ che hanno uno scopo funzionale comune per un utente. Gli spazi devono essere occupabili (visitabili). In verticale, gli spazi vanno dall'alto del livello alla base della soletta sovrastante. Gli spazi occupati vanno fino alla base del soffitto, come espresso dal campo dati _COBie.Space.UsableHeight_. Gli spazi di grandi dimensioni che hanno più di un singolo scopo funzionale o utente possono essere separati in spazi individuali. Gli spazi possono essere utilizzati anche su livelli di tipo “_Roof_” (tetto) o “_Site_” (sito) per identificare regioni spaziali al di fuori del recinto di una struttura. Si prevede che l'elenco totale degli Spazi in un deliverable COBie rappresenti l'intera estensione dell'impianto, della struttura o del gruppo di strutture.
-**Zone** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Le zone rappresentano un raggruppamento di spazi combinati per uno scopo comune. Si prevede che le Zone in un deliverable COBie includano tutti gli Spazi. Gli spazi possono appartenere a più di una zona.
-**Coordinate** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Rappresenta l'orientamento geometrico semplice associato ai dati in un deliverable COBie. Questa informazione è utile se un singolo spazio contiene più componenti, per aiutare a identificarne uno in particolare. Ad esempio, un apparecchio di illuminazione in un grande spazio di magazzino.
-**Type** (==REQUIRED==). Rappresenta le informazioni relative ai diversi tipi di prodotti e attrezzature del Facility. Lo scopo principale di COBie è quello di acquisire i dati sui beni “mantenibili” o “gestibili” (prodotti e attrezzature) di un impianto, di una struttura o di un gruppo di strutture. Non aggiungere campi di dati personalizzati a questa tabella di dati (o alla destra delle colonne se rappresentati in formato SpreadsheetML / Microsoft Excel). A tale scopo, utilizzare la tabella Attributi. ==REQUIRED==.
-**Component** (==REQUIRED==). Le singole istanze dei prodotti e delle apparecchiature definite nella tabella Type. Tutti i record *COBie.Componen*t devono essere identificati all'interno di un _COBie.Space_ in cui si trova il bene o nel _COBie.Space_ da cui il bene viene gestito.
-**System** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I sistemi rappresentano raggruppamenti di componenti che svolgono una funzione comune. I componenti possono appartenere a più di un sistema.
-**Attribute** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Utilizzato per memorizzare i campi dati personalizzati per il deliverable COBie. Questa tabella deve essere utilizzata al posto dell'aggiunta di campi di dati personalizzati ad altre tabelle di dati in un deliverable COBie.
-**Job** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Identifica la varietà di lavori richiesti per il funzionamento, la manutenzione, l'avvio, l'arresto o la risoluzione dei problemi di un determinato componente dell'impianto, della struttura o di un gruppo di strutture.
-**Event** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Gli eventi rappresentano una singola occorrenza di un'attività come parte di un lavoro. Introdotto in COBie V3.
-**Package** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Include informazioni sul contratto legale che ha richiesto il deliverable COBie. Introdotto in COBie V3.
-**Risk** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Identifica lo scambio di informazioni sui processi aziendali e sulla segnalazione di eccezioni relative ad altre parti di un deliverable COBie. Anche se tutti i campi “Table” e “Table.Name” sono indicati come obbligatori, l'unico requisito è che almeno una coppia di questi campi sia popolata, ma è possibile popolarli fino a tutte e tre le coppie. In altre parole, se la coppia di campi “SpatialTable” e “SpatialTable.Name” è popolata, la coppia “PhysicalTable” e “PhysicalTable.Name” o la coppia “ProcessTable” e “ProcessTable.Name” non devono essere popolate (anche se è possibile scegliere qualsiasi combinazione di coppie).
-**Resource** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I registri delle risorse identificano gli strumenti, i materiali e la formazione necessari per la manutenzione dell'impianto, della struttura o del gruppo di strutture.
-**Document** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I record dei documenti identificano i file esterni che forniscono informazioni associate ai dati di un deliverable COBie. I file a cui si fa riferimento in questa tabella di dati devono essere forniti con il deliverable COBie in formato PDF (Portable Document Format) o in un tipo di file immagine comune, come il formato PNG (Portable Network Graphics) o JPEG (Joint Photographic Experts Group).
-**PickList** (==REQUIRED==). Include elenchi di valori accettabili per alcuni campi di dati.
+- **Instruction** (REQUIRED). Fornisce istruzioni scritte relative al database COBie, ma contiene anche le informazioni generali di presentazione per un particolare consegna.
+- **Company** (REQUIRED). Rappresenta le informazioni relative a un'azienda a cui si fa riferimento altrove in un un'altra tabella. Questa tabella si chiamava “Contact” nelle versioni precedenti di COBie.
+- **Facility** (REQUIRED). Fornisce informazioni relative all'impianto, alla struttura o al gruppo di strutture (nel caso di progetti infrastrutturali) a cui la consegna fa riferimento. In questa tabella è ammesso un solo valore (_record_).
+- **Level** (REQUIRED). Contiene informazioni relative ai livelli verticali di un impianto o, nel caso di progetti infrastrutturali, alle aree geografiche come il sito circostante un impianto/struttura, un corridoio ferroviario o autostradale, ecc. Questa tabella era chiamata “Floor” nelle versioni precedenti di COBie.
+- **SpaceType** (REQUIRED). Fornisce informazioni relative ai diversi tipi di spazi che compongono un impianto, una struttura o un gruppo di strutture per questo deliverable COBie. Ad esempio: “Office”, ‘Mechanical’ o ‘Circulation’. Si tratta di una nuova tabella di dati per il COBie V3.
+- **Space** (REQUIRED). Gli spazi rappresentano la suddivisione dei _Levels_ in _Rooms/Areas_ che hanno uno scopo funzionale comune per un utente. Gli spazi devono essere occupabili (visitabili). In verticale, gli spazi vanno dall'alto del livello alla base della soletta sovrastante. Gli spazi occupati vanno fino alla base del soffitto, come espresso dal campo dati _COBie.Space.UsableHeight_. Gli spazi di grandi dimensioni che hanno più di un singolo scopo funzionale o utente possono essere separati in spazi individuali. Gli spazi possono essere utilizzati anche su livelli di tipo “_Roof_” (tetto) o “_Site_” (sito) per identificare regioni spaziali al di fuori del recinto di una struttura. Si prevede che l'elenco totale degli Spazi in un deliverable COBie rappresenti l'intera estensione dell'impianto, della struttura o del gruppo di strutture.
+- **Zone** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Le zone rappresentano un raggruppamento di spazi combinati per uno scopo comune. Si prevede che le Zone in un deliverable COBie includano tutti gli Spazi. Gli spazi possono appartenere a più di una zona.
+- **Coordinate** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Rappresenta l'orientamento geometrico semplice associato ai dati in un deliverable COBie. Questa informazione è utile se un singolo spazio contiene più componenti, per aiutare a identificarne uno in particolare. Ad esempio, un apparecchio di illuminazione in un grande spazio di magazzino.
+- **Type** (REQUIRED). Rappresenta le informazioni relative ai diversi tipi di prodotti e attrezzature del Facility. Lo scopo principale di COBie è quello di acquisire i dati sui beni “mantenibili” o “gestibili” (prodotti e attrezzature) di un impianto, di una struttura o di un gruppo di strutture. Non aggiungere campi di dati personalizzati a questa tabella di dati (o alla destra delle colonne se rappresentati in formato SpreadsheetML / Microsoft Excel). A tale scopo, utilizzare la tabella Attributi. REQUIRED.
+- **Component** (REQUIRED). Le singole istanze dei prodotti e delle apparecchiature definite nella tabella Type. Tutti i record *COBie.Componen*t devono essere identificati all'interno di un _COBie.Space_ in cui si trova il bene o nel _COBie.Space_ da cui il bene viene gestito.
+- **System** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I sistemi rappresentano raggruppamenti di componenti che svolgono una funzione comune. I componenti possono appartenere a più di un sistema.
+- **Attribute** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Utilizzato per memorizzare i campi dati personalizzati per il deliverable COBie. Questa tabella deve essere utilizzata al posto dell'aggiunta di campi di dati personalizzati ad altre tabelle di dati in un deliverable COBie.
+- **Job** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Identifica la varietà di lavori richiesti per il funzionamento, la manutenzione, l'avvio, l'arresto o la risoluzione dei problemi di un determinato componente dell'impianto, della struttura o di un gruppo di strutture.
+- **Event** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Gli eventi rappresentano una singola occorrenza di un'attività come parte di un lavoro. Introdotto in COBie V3.
+- **Package** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Include informazioni sul contratto legale che ha richiesto il deliverable COBie. Introdotto in COBie V3.
+- **Risk** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). Identifica lo scambio di informazioni sui processi aziendali e sulla segnalazione di eccezioni relative ad altre parti di un deliverable COBie. Anche se tutti i campi “Table” e “Table.Name” sono indicati come obbligatori, l'unico requisito è che almeno una coppia di questi campi sia popolata, ma è possibile popolarli fino a tutte e tre le coppie. In altre parole, se la coppia di campi “SpatialTable” e “SpatialTable.Name” è popolata, la coppia “PhysicalTable” e “PhysicalTable.Name” o la coppia “ProcessTable” e “ProcessTable.Name” non devono essere popolate (anche se è possibile scegliere qualsiasi combinazione di coppie).
+- **Resource** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I registri delle risorse identificano gli strumenti, i materiali e la formazione necessari per la manutenzione dell'impianto, della struttura o del gruppo di strutture.
+- **Document** (REQUIRED ONLY IF SPECIFIED IN THE CONTRACT). I record dei documenti identificano i file esterni che forniscono informazioni associate ai dati di un deliverable COBie. I file a cui si fa riferimento in questa tabella di dati devono essere forniti con il deliverable COBie in formato PDF (Portable Document Format) o in un tipo di file immagine comune, come il formato PNG (Portable Network Graphics) o JPEG (Joint Photographic Experts Group).
+- **PickList** (REQUIRED). Include elenchi di valori accettabili per alcuni campi di dati.
 
 Ogni Data Table contiene diversi Data Field, che sono predefiniti come parte dello standard COBie.
 
@@ -243,6 +246,8 @@ Ogni campo può essere di un certo dataType. Nei capitoli a seguire il dataType 
 
 ## C.4.2 Data Fields<a name="c42-data-fields"></a>
 
+### C.4.2.1 Tabella Instruction<a name="c421-instruction"></a>
+
 ![Figura c2: Tabella Instruction](images/COBie_v3_20.png "Figura c2: Tabella Instruction")
 
 Tabella c4. Data Fields per tabella Instruction ([IfcProject](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcProject.htm), [IfcUnitAssignment](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcUnitAssignment.htm))
@@ -272,6 +277,8 @@ Tabella c4. Data Fields per tabella Instruction ([IfcProject](https://standards.
 |   ClassificationSystem.Type    |                                                                                                                Il sistema di classificazione utilizzato per il campo dati COBie.Type.Category. Questo campo dati si allinea ai valori contenuti nel campo dati COBie.PickList.Type.Category                                                                                                                |  T   |      n/a       |       Required       | [IfcClassification.Name](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcClassification.htm) |
 |  ClassificationSystem.System   |                                                                                                              Il sistema di classificazione utilizzato per il campo dati COBie.System.Category. Questo campo dati si allinea ai valori contenuti nel campo dati COBie.PickList.System.Category                                                                                                              |  T   |      n/a       |       Required       | [IfcClassification.Name](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcClassification.htm) |
 
+### C.4.2.2 Tabella Company<a name="c422-company"></a>
+
 ![Figura c3: Tabella Company](images/COBie_v3_02.png "Figura c2: Tabella Company")
 
 Tabella c5. Data Fields per tabella Company ([IfcOrganizzazione](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcOrganizzazione.htm))
@@ -295,6 +302,8 @@ Tabella c5. Data Fields per tabella Company ([IfcOrganizzazione](https://standar
 |     Department     |                                                                                                                                     Il nome del dipartimento dell'azienda                                                                                                                                      |  T   |    Optional    |       If Specified       | [IfcOrganizzazioneRelationship](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcOrganizzazioneRelationship.htm) |
 | OrganizzazioneCode |                                                                                                                                      Il codice organizzativo dell'azienda                                                                                                                                      |  T   |    Optional    |       If Specified       |     [IfcOrganizzazione.Identification](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcOrganizzazione.htm)      |
 
+### C.4.2.3 Tabella Facility<a name="c423-facility"></a>
+
 ![Figura c4: Tabella Facility](images/COBie_v3_03.png "Figura c4: Tabella Facility")
 
 Tabella c6. Data Fields per tabella Facility ([IfcProject](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcProject.htm), [IfcSite](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSite.htm), [IfcFacility](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFacility.htm), [IfcBuilding](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuilding.htm), [IfcBridge](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBridge.htm), [IfcRail](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRail.htm), [IfcRoad](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRoad.htm))
@@ -313,6 +322,8 @@ Tabella c6. Data Fields per tabella Facility ([IfcProject](https://standards.bui
 |   ExtObject   |                                               Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                |  T   |    External    |         External         |                                                                                                                                       |
 |   ExtSystem   |                                               Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                |  T   |    External    |         External         |                                                                                                                                       |
 
+### C.4.2.4 Tabella Level<a name="c424-level"></a>
+
 ![Figura c5: Tabella Level](images/COBie_v3_04.png "Figura c5: Tabella Level")
 
 Tabella c7. Data Fields per tabella Level ([IfcFacilityPart](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFacilityPart.htm), [IfcBuildingStorey](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuildingStorey.htm))
@@ -329,6 +340,8 @@ Tabella c7. Data Fields per tabella Level ([IfcFacilityPart](https://standards.b
 |   Elevation   |                                                                                    La quota in cima alla struttura del livello. Se i valori consentiti non sono specificati dal contratto, il valore predefinito è misurato come valore relativo rispetto al datum della struttura.                                                                                    |  R   |    Optional    |       If Specified       |  [Pset_BuildingStoreyCommon.ElevationOfSSLRelative](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_BuildingStoreyCommon.htm)   |
 |    Height     |                                                                              La distanza tra la parte superiore della struttura di livello e la parte inferiore della struttura sovrastante. Si applica in genere ai record con il valore del campo dati COBie.Level.Category di “Floor”.                                                                              |  R   |    Optional    |       If Specified       | [QTO_BuildingStoreyBaseQuantities.GrossHeight](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Qto_BuildingStoreyBaseQuantities.htm) |
 
+### C.4.2.5 Tabella SpaceType<a name="c425-spacetype"></a>
+
 ![Figura c6: Tabella SpaceType](images/COBie_v3_17.png "Figura c6: Tabella SpaceType")
 
 Tabella c8. Data Fields per tabella SpaceType ([IfcSpaceType](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSpaceType.htm))
@@ -341,6 +354,8 @@ Tabella c8. Data Fields per tabella SpaceType ([IfcSpaceType](https://standards.
 | ExtIdentifier |                 Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                  |  T   |    External    |         External         |                                                                                                                  |
 |   ExtObject   |                 Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                  |  T   |    External    |         External         |                                                                                                                  |
 |   ExtSystem   |                 Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                  |  T   |    External    |         External         |                                                                                                                  |
+
+### C.4.2.6 Tabella Space<a name="c426-space"></a>
 
 ![Figura c7: Tabella Space](images/COBie_v3_05.png "Figura c7: Tabella Space")
 
@@ -361,6 +376,8 @@ Tabella c9. Data Fields per tabella Space ([IfcSpace](https://standards.building
 |    NetArea     |                                                            L'area dello spazio utilizzabile, come specificato nel contratto di progettazione e calcolato in base al valore COBie.Instruction.AreaMeasurementStandard identificato                                                             |  R   |    Optional    |       If Specified       |  [Qto_SpaceBaseQuantities.NetFloorArea](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Qto_SpaceBaseQuantities.htm)  |
 |  UsableHeight  |                                                                         Distanza dalla sommità del livello finito alla base del soffitto. Se non c'è soffitto, questo valore deve corrispondere a COBie.Level.Height                                                                          |  R   |    Optional    |       If Specified       |            [IfcSpace.ElevationWithFlooring](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSpace.htm)             |
 
+### C.4.2.7 Tabella Zone<a name="c427-zone"></a>
+
 ![Figura c8: Tabella Zone](images/COBie_v3_06.png "Figura c8: Tabella Zone")
 
 Tabella c10. Data Fields per tabella Zone ([IfcZone](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcZone.htm))
@@ -375,6 +392,8 @@ Tabella c10. Data Fields per tabella Zone ([IfcZone](https://standards.buildings
 | ExtIdentifier |                                                                                              Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                               |  T   |    External    |         External         |                                                                                                              |
 |   ExtObject   |                                                                                              Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                               |  T   |    External    |         External         |                                                                                                              |
 |   ExtSystem   |                                                                                              Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                               |  T   |    External    |         External         |                                                                                                              |
+
+### C.4.2.8 Tabella Type<a name="c428-type"></a>
 
 ![Figura c9: Tabella Type](images/COBie_v3_07.png "Figura c9: Tabella Type")
 
@@ -404,6 +423,8 @@ Tabella c11. Data Fields per tabella Type ([IfcElementType](https://standards.bu
 |      PurchaseCost      |                                                                                    Durante le fasi di costruzione e consegna, si tratta del costo di acquisto dell'asset. Durante le fasi di pianificazione e progettazione, questo campo dati non è applicabile                                                                                     |  R   |    Optional    |       If Specified       |                        [IfcAsset.OriginalValue](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcAsset.htm)                         |
 |  WarrantyDescrizione   |                                                                                                                                                    Descrizione generale della garanzia dell'asset                                                                                                                                                    |  T   |    Optional    |       If Specified       |                      [Pset_Warranty.Content](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_Warranty.htm)                       |
 
+### C.4.2.9 Tabella Element<a name="c429-element"></a>
+
 ![Figura c10: Tabella Element](images/COBie_v3_08.png "Figura c10: Tabella Element")
 
 Tabella c12. Data Fields per tabella Components ([IfcElement](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElement.htm))
@@ -425,6 +446,8 @@ Tabella c12. Data Fields per tabella Components ([IfcElement](https://standards.
 |  InstallationDate   |                         Durante le fasi di costruzione e consegna, questa è la data in cui l'asset è stato collocato nella sua posizione finale. Durante le fasi di pianificazione e progettazione, questo campo dati non è applicabile                         |  D   |    Optional    |       If Specified       | [Pset_ConstructionOccurence.InstallationDate](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_ConstructionOccurence.htm) |
 |  WarrantyStartDate  |                                Durante le fasi di costruzione e consegna, questa è la data di inizio del periodo di garanzia dell'asset. Durante le fasi di pianificazione e progettazione, questo campo dati non è applicabile                                 |  D   |    Optional    |       If Specified       |             [Pset_Warranty.WarrantyStartDate](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_Warranty.htm)              |
 
+### C.4.2.10 Tabella System<a name="c4210-system"></a>
+
 ![Figura c11: Tabella System](images/COBie_v3_09.png "Figura c11: Tabella System")
 
 Tabella c13. Data Fields per tabella System ([IfcSystem](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSystem.htm), [IfcBuildingSystem](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuildingSystem.htm), [IfcDistributionSystem](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDistributionSystem.htm))
@@ -440,6 +463,8 @@ Tabella c13. Data Fields per tabella System ([IfcSystem](https://standards.build
 |   ExtSystem    |                                                                      Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                       |  T   |    External    |         External         |                                                                                                              |
 | Component.Name |                                              Un riferimento a un elemento della tabella di dati Component (un valore COBie.Component.Name). Si tratta di un elenco di valori separati da virgole                                               |  T   |    Required    |        Reference         |    [IfcElement.Name](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElement.htm)     |
 
+### C.4.2.11 Tabella Resuorces<a name="c4211-resources"></a>
+
 ![Figura c12: Tabella Resources](images/COBie_v3_10.png "Figura c12: Tabella Resources")
 
 Tabella c14. Data Fields per tabella Resources ([IfcConstructionEquipmentResourceType](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcConstructionEquipmentResourceType.htm), [IfcConstructionMaterialResourceType](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcConstructionMaterialResourceType.htm), [IfcConstructionProductResourceType](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcConstructionProductResourceType.htm) )
@@ -452,6 +477,8 @@ Tabella c14. Data Fields per tabella Resources ([IfcConstructionEquipmentResourc
 | ExtIdentifier |                                                                    Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                    |  T   |    External    |       External       |                                           |
 |   ExtObject   |                                                                    Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                    |  T   |    External    |       External       |                                           |
 |   ExtSystem   |                                                                    Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                    |  T   |    External    |       External       |                                           |
+
+### C.4.2.12 Tabella Job<a name="c4212-job"></a>
 
 ![Figura c13: Tabella Job](images/COBie_v3_11.png "Figura c13: Tabella Job")
 
@@ -477,6 +504,8 @@ Tabella c15. Data Fields per tabella Job ([IfcTaskType](https://standards.buildi
 |    Priors     |                                                                             Le attività che devono essere completate prima di questo lavoro. Se COBie.Job.Descrizione contiene una serie di singole operazioni, si tratta di un elenco separato da virgole del COBie.Job.TaskNumber per tutti i lavori precedenti. Il primo della serie deve avere il valore “0”                                                                              |  T   |    Required    | If Specified (Reference) |     [IfcRelSequence](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRelSequence.htm)      |
 | Resource.Name |                                                                                                                                     Un elenco separato da virgole delle risorse necessarie per questo lavoro. Il valore di questo campo dati deriva da uno dei valori del campo dati COBie.Resource.Name                                                                                                                                      |  T   |    Required    | If Specified (Reference) |                                        IfcConstruction\*ResourceType.Name                                         |
 
+### C.4.2.13 Tabella Event<a name="c4213-event"></a>
+
 ![Figura c14: Tabella Event](images/COBie_v3_18.png "Figura c14: Tabella Event")
 
 Tabella c16. Data Fields per tabella Event ([IfcTask](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTask.htm))
@@ -496,6 +525,8 @@ Tabella c16. Data Fields per tabella Event ([IfcTask](https://standards.building
 |   StartDate   |                                                               La data di inizio dell'evento.                                                               |  D   |    Required    |       Required       |  [IfcTaskTime.ScheduleStart](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTaskTime.htm)   |
 |    EndDate    |                                                                La data di fine dell'evento.                                                                |  D   |    Optional    |     If Specified     |  [IfcTaskTime.ScheduleFinish](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTaskTime.htm)  |
 
+### C.4.2.14 Tabella Package<a name="c4214-package"></a>
+
 ![Figura c15: Tabella Package](images/COBie_v3_19.png "Figura c15: Tabella Package")
 
 Tabella c17. Data Fields per tabella Package ([IfcWorkPlan](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWorkPlan.htm))
@@ -512,6 +543,8 @@ Tabella c17. Data Fields per tabella Package ([IfcWorkPlan](https://standards.bu
 |   ExtSystem   |                                 Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                  |  T   |    External    |         External         |                                                                                                                     |
 |   StartDate   |                                                                      Data di inizio del Package                                                                      |  D   |    Required    |         Required         |  [IfcTaskTime.ScheduleStart](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTaskTime.htm)   |
 |    EndDate    |                                                                       data di fine del Package                                                                       |  D   |    Optional    |       If Specified       |  [IfcTaskTime.ScheduleFinish](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcTaskTime.htm)  |
+
+### C.4.2.15 Tabella Risk<a name="c4215-package"></a>
 
 ![Figura c16: Tabella Risk](images/COBie_v3_15.png "Figura c16: Tabella Risk")
 
@@ -537,6 +570,8 @@ Tabella c18. Data Fields per tabella Risk ([Pset_Risk](https://standards.buildin
 |     Likelihood     |                        La probabilità di questo rischio. Il valore di questo campo dati deriva da uno dei valori del campo dati COBie.PickList.Risk.Likelihood                         |  T   |    Required    |   Required (Reference)   |  [Pset_Risk.MitigatedRiskLikelihood](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_Risk.htm)  |
 |     Mitigation     |                                                           Descrizione generale del modo in cui questo rischio sarà mitigato                                                            |  T   |    Optional    |       If Specified       |     [Pset_Risk.MitigationPlanned](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_Risk.htm)     |
 
+### C.4.2.16 Tabella Document<a name="c4216-document"></a>
+
 ![Figura c17: Tabella Document](images/COBie_v3_12.png "Figura c17: Tabella Document")
 
 Tabella c19. Data Fields per tabella Document ([IfcDocumentInformation](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDocumentInformation.htm))
@@ -557,6 +592,8 @@ Tabella c19. Data Fields per tabella Document ([IfcDocumentInformation](https://
 |     File      |                                                Il nome del file, con estensione, che contiene le informazioni associate. Il nome del file può essere incluso anche nel campo dati COBie.Document.Path                                                |  T   |    Optional    |     If Specified     |  [IfcDocumentInformation.Location](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDocumentInformation.htm)   |
 |   Reference   |                                                Se diverso dai campi COBie.Document.Path e COBie.Document.File, si tratta di un riferimento a documenti forniti da cataloghi o siti web di produttori                                                 |  T   |    Optional    |     If Specified     |    [IfcDocumentInformation.Name](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcDocumentInformation.htm)     |
 
+### C.4.2.17 Tabella Attribute<a name="c4217-attribute"></a>
+
 ![Figura c18: Tabella Attribute](images/COBie_v3_13.png "Figura c18: Tabella Attribute")
 
 Tabella c20. Data Fields per tabella Attribute ([IfcPropertyValue](https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcProperty.htm))
@@ -574,6 +611,8 @@ Tabella c20. Data Fields per tabella Attribute ([IfcPropertyValue](https://stand
 |     Value     |                                                              Il valore dell'Attribute.                                                              |  T   |    Required    |       Required       |                              |
 |     Unit      |                                                   L'unità che definisce il valore dell'Attribute.                                                   |  T   |    Required    |       Required       |                              |
 | AllowedValues |  Un elenco separato da virgole di uno o più valori consentiti per il campo dati “Value” di un particolare elemento della tabella dati “Attribute”   |  T   |    Optional    |     If Specified     |                              |
+
+### C.4.2.18 Tabella Coordinate<a name="c4218-coordinate"></a>
 
 ![Figura c19: Tabella Coordinate](images/COBie_v3_14.png "Figura c19: Tabella Coordinate")
 
@@ -595,6 +634,8 @@ Tabella c21. Data Fields per tabella Coordinate ([IfcLocalPlacement](https://sta
 |    ExtIdentifier    |                                                                                                     Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                                      |  T   |    External    |         External         |                                                                                                                                  |
 |      ExtObject      |                                                                                                     Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                                      |  T   |    External    |         External         |                                                                                                                                  |
 |      ExtSystem      |                                                                                                     Per informazioni dettagliate su questi campi di dati, consultare la sezione della tabella "Company"                                                                                                      |  T   |    External    |         External         |                                                                                                                                  |
+
+### C.4.2.19 Tabella PickList<a name="c4219-picklist"></a>
 
 ![Figura c20: Tabella PickList](images/COBie_v3_16.png "Figura c20: Tabella PickList")
 
