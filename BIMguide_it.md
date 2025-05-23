@@ -219,38 +219,64 @@ Come requisito minimo, è richiesto un modello per la disciplina architettonica,
 
 ### 2.1.1 Denominazione e codifica modelli, nuvole di punti, elaborati grafici e documentali<a name="211-denominazione-e-codifica-modelli-nuvole-di-punti-elaborati-grafici-e-documentali"></a>
 
-Nell’Ambiente di Condivisione dei Dati ogni modello informativo deve avere una denominazione univoca secondo una codifica alfanumerica con il fine di assicurare una rapida ricerca delle informazioni ed agevolare i flussi di lavoro tra i soggetti che collaborano allo sviluppo del bene[^1].
+Nell’Ambiente di Condivisione dei Dati ogni modello informativo deve avere una denominazione univoca secondo una codifica alfanumerica con il fine di assicurare una rapida ricerca delle informazioni ed agevolare i flussi di lavoro tra i soggetti che collaborano allo sviluppo del bene.
 
-Tale codifica è così composta:
+Tale codifica è stata ripresa dalla normativa inglese BS così composta:
 
-> (Edficio.Blocco)-(Livello)-(Tipo di File)-(Disciplina)-(Alfanumerico)
+> (Progetto)-(Creatore)-(Volume o Sistema)-(Livello)-(Tipo di File)-(Disciplina)-(Classificazione)-(Numero)-(Descrizione)-(Stato)-(Revisione)
 
-**Codice Edificio.** Corrisponde al codice Edificio già utilizzato nei sistemi gestionali dell’Organizzazione. Il codice dopo il punto può essere utilizzato nel campo Blocco a meno di ulteriori suddivisioni specifiche.
+**Codice Progetto.** Questo campo facilita l'identificazione di un file, un contratto o un progetto. Il campo Progetto non si riferisce necessariamente a un progetto architettonico o di ingegneria. Deve essere inteso da un punto di vista più ampio: come un codice di file o il codice del contratto.
 
-**Codice Blocco.** Considera la suddivisione in blocchi di uno stesso Edificio ed è rappresentato da un numero progressiva.
+Deve essere fornito dal committente (sviluppatore, cliente) nelle prime fasi del progetto, e confermato nell'EIR. Se il cliente non ha questo codice, deve essere proposto dal team di progetto e confermato nel BIM Execution Plan (BEP).
 
-Tabella 7. Codice Edificio.Blocco
+Può corrispondere al codice Edificio già utilizzato nei sistemi gestionali dell’Organizzazione. Il codice dopo il punto può essere utilizzato nel campo Blocco a meno di ulteriori suddivisioni specifiche.
 
-| Codice | Descrizione               |
-| :----: | ------------------------- |
-| 020.00 | Santa Verdiana            |
-| 028.01 | Palazzina Ufficio Tecnico |
-| 039.00 | Ufficio Igiene            |
-| 041.01 | Presidenza Medica         |
-| 051.00 | Villa Il Gioiello         |
-| 054.00 | Ulisse Dini               |
-| 059.00 | Rettorato                 |
-| 094.00 | Ex farmitalia             |
-| 200.00 | Polifunzionale            |
+La norma [UNE 157001](https://www.en-standard.eu/une-157001-2014-general-criteria-for-the-drawing-up-of-the-documents-which-make-up-a-technical-project/) definisce il Progetto come un insieme di documenti, modelli o mock-up in supporto fisico, logico o altro, il cui scopo è la definizione e la valutazione delle caratteristiche di un prodotto, lavoro, installazione, servizio o software (supporto logico), che sono richieste in
+base al suo scopo o destinazione.
 
-**Codice Livello.** Per livello si intende il piano del Modello. Ogni piano è quindi identificato con un codice alfanumerico di due caratteri.
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ tra 2 e 6 caratteri alfanumerici, consigliato 3
+- _Suggerimento:_ azioni diverse all'interno dello stesso progetto dovrebbero essere differenziate per Volume/Sistema o per Livello/Località, ma senza cambiare il codice del progetto.
+
+**Codice Creatore.** Identifica l'organizzazione che ha creato il documento. Questo campo dovrebbe permettere di identificare chiaramente la paternità del contenuto di un documento.
+
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ tra 2 e 6 caratteri alfanumerici, consigliato 3
+
+**Codice Volume o Sistema.** Il campo Volume o Sistema (Volume or System) rappresenta raggruppamenti rappresentativi, aree, sezioni o sottoprogetti in cui il progetto è frazionato/suddiviso. Possiamo utilizzare questo codice per identificare le diverse fasi di un processo edilizio che si susseguono all'interno dello stesso progetto.
+
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ tra 2 e 3 caratteri alfanumerici.
+- _Suggerimento:_ all'inizio del Progetto, elencare tutti i Sistemi o Volumi in cui il Progetto sarà diviso. Laddove appropriato, dovrebbero essere seguite le denominazioni e la numerazione precedentemente utilizzate nel progetto da altre parti interessate.
+
+Tabella 7. Codici Volume o Sistema
+
+|    Codice     | Descrizione                                       |
+| :-----------: | ------------------------------------------------- |
+| Z01, Z02, ... | Zone 01, Zona 02, ...                             |
+| E01, E02, ... | Edificio 01, Edificio 02, ...                     |
+| FC1, FC2, ... | Fase di Costruzione 01, Fase di Costruzione 02    |
+|    NC, NE     | Nuova Costruzione, Costruzione Esistente          |
+|    EP, CP     | Esecuzione del Progetto, Costruzione del Progetto |
+|    XX/XXX     | Non applicabile a nessun sistema o volume         |
+|    YY/YYY     | Vari volumi o sistemi                             |
+|    ZZ/ZZZ     | Tutti i volumi o sistemi                          |
+
+**Codice Livello.** Identifica la posizione delle informazioni all'interno di un determinato Volume o Sistema. Questo campo è essenziale per adattare la granularità dell'informazione alla realtà fisica dei beni e della loro gestione.
+
+Per livello si intende il piano architettonico del Modello. Ogni piano è quindi identificato con un codice alfanumerico di due caratteri.
+
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ 3 caratteri alfanumerici.
+- _Suggerimento:_ all'inizio del progetto, elencare tutti i Livelli o le Posizioni in cui il progetto sarà diviso. Laddove appropriato, dovrebbero essere seguite le denominazioni e la numerazione precedentemente utilizzate nel progetto da altre parti interessate. Se l'informazione nel documento è su più livelli, si può ZZZ, e se il progetto non ha livelli, si può usare XXX.
 
 Tabella 8. Codice Livello
 
 | Codice | Descrizione                 |
 | :----: | --------------------------- |
-|   ZZ   | Livello multiplo            |
+|   YY   | Livello multiplo            |
 |   XX   | Nessuno livello applicabile |
+|   ZZ   | Tutti i livelli             |
 |   GF   | Piano terra                 |
 |   01   | Primo piano                 |
 |   02   | Secondo piano               |
@@ -260,7 +286,11 @@ Tabella 8. Codice Livello
 |   G1   | Piano interrato 1           |
 |   G2   | Piano interrato 2           |
 
-**Codice Tipo File.** Il codice identificativo del tipo di file è composto da due caratteri alfanumerici.
+**Codice Tipo File.** Identifica il tipo di documento (modello informativo, piano, verbale, rapporto, ecc.), se si tratta di un "deliverable" o di qualsiasi altro documento ausiliario che può essere generato durante l'intero ciclo di vita dell'asset e che richiede l'archiviazione.
+
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ 2/3 caratteri alfanumerici.
+- _Suggerimento:_ si raccomanda di utilizzare uno o due livelli di codifica a seconda della dimensione del progetto e della granularità desiderata. Un solo livello dovrebbe essere applicato per l'intero progetto.
 
 Tabella 9. Codice Tipo File
 
@@ -289,7 +319,11 @@ Tabella 9. Codice Tipo File
 |   SN   | Elenco delle non conformità (verifica)    |
 |   VS   | File per la visualizzazione del modello   |
 
-**Codice Disciplina.** Le discipline considerate per la codifica di Modelli ed elaborati sono indicate con i codici che seguono.
+**Codice Disciplina.** Identifica il campo, il soggetto o l'attività a cui corrisponde il documento (architettura, strutture, ecc.). Le discipline considerate per la codifica di Modelli ed elaborati sono indicate con i codici che seguono.
+
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ tra 1 e 3 caratteri alfabetici.
+- _Suggerimento:_ si raccomanda di utilizzare uno o due livelli di codifica a seconda della dimensione del progetto e della granularità desiderata. Un solo livello dovrebbe essere applicato per l'intero progetto.
 
 Tabella 10. Codice Disciplina
 
@@ -314,29 +348,53 @@ Tabella 10. Codice Disciplina
 |   V    | Facciate                            | Modelli ed elaborati contenti esclusivamente le facciate dei fabbricati                                                                                                                              |
 |   Z    | Generico                            | Modelli ed elaborati afferenti a più discipline                                                                                                                                                      |
 
-**Codice Alfanumerico.** Tale codice è composto da cinuqe caratteri, di cui il primo indica la Fase di riferimento, il secondo con lo Stato (solo per i PIM, in altri casi si metta uno 0), gli ultimi tre dedicati alla successione temporale dei modelli[^3].
+**Codice Classificazione.** Aiuta a descrivere l'asset rappresentato utilizzando il dizionario di riferimento scelto, ad esempio l'ultima versione di Uniclass.
 
-Tabella 11. Codice Alfanumerico
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ dipende dalla classificazione adottata
+- _Suggerimento:_ l'utilizzo o meno di tale codice all'interno della nomenclatura del file deve essere deciso dal Project Manager all'inizio nel progetto nel BEP.
 
-| Codice Fase | Descrizione         | Codice Stato | Descrizione            |
-| :---------: | ------------------- | :----------: | ---------------------- |
-|      S      | As Is               |      S1      | Stato di fatto         |
-|      P      | PTFE                |      D       | Demolizioni            |
-|      D      | Progetto definitivo |      N       | Nuove costruzioni      |
-|      E      | Progetto esecutivo  |      R       | Interventi di restauro |
-|      C      | CSP                 |      T2      | Sicurezza              |
-|      L      | Direzione Lavori    |              |                        |
-|      K      | CSE                 |              |                        |
-|      A      | As Built            |              |                        |
-|      M      | Manutenzione        |              |                        |
-|      G      | Generale            |              |                        |
+**Numero.** E' un campo ordinale usato per enumerare le parti, e viene usato come elemento di differenziazione quando gli altri campi hanno valori uguali.
 
-Si riportano alcuni esempi delle codifiche proposte:
+- _Livello del requisito:_ obbligatorio.
+- _Lunghezza:_ 3 caratteri numerici.
+- _Suggerimento:_ non deve essere usato per altri concetti, come versioni o revisioni.
 
-- IT-TS-FI-CF-054.00-ZZ-M3-A-S0001 -- Modello architettonico dello stato di fatto dell'edificio 054 Ulisse Dini;
-- IT-TS-FI-CF-054.00-ZZ-M3-M-DN001 -- Modello impianti meccanici del progetto definitivo relativo agli elementi di nuova costruzione dell'edificio 054 - Ulisse Dini;
-- IT-TS-FI-CF-094.00-ZZ-M3-F-M0001 -- Modello arredi a scopo manutentivo dell'edificio 094 - Ex Farmitalia;
-- IT-TS-FI-CN-059.00-ZZ-M3-S-M0001 -- Modello strutturale dello stato di fatto dell'edificio 059 - Rettorato.
+**Campo Descrizione.** E' un testo che descrive il documento per facilitare il riconoscimento umano e la comprensione del suo contenuto durante il ciclo di vita del documento.
+
+- _Livello del requisito:_ opzionale.
+- _Lunghezza:_ nessuna limitazione, anche se si raccomanda di mantenerla il più breve possibile.
+- _Suggerimento:_ si raccomanda di mantenere lo stesso numero di caratteri per favorire l'ordine dei documenti. Tuttavia, durante lo Stato Work in Progress (WIP), si raccomanda di utilizzare un sistema di codifica più breve (interno) e di utilizzare processi automatici per rinominare i documenti (secondo la codifica definita) prima di condividerli.
+
+**Codice Stato.** Definisce lo stato, temporaneo o definitivo, del documento. Questo campo fornisce informazioni sullo scopo del documento. In questo modo, attraverso lo scambio di documentazione, possiamo scoprire se il documento è soggetto a un processo di revisione, commenti, approvazione da parte di una delle parti.
+
+- _Livello del requisito:_ opzionale o metadato.
+- _Lunghezza:_ 2 caratteri numerici.
+- _Suggerimento:_ si raccomanda di usare questo campo come Metadato se si usa una soluzione tecnologica CDE che lo permette.
+
+Tabella 11. Codice Stato
+
+|              Codice              | Descrizione                                                                                                                                                                                                                                                |
+| :------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      Lavori in Corso (WIP)       | S0 = Stato iniziale assegnato a un compito o a un documento. Indica che il documento non è pronto per essere condiviso al di fuori del team di lavoro.                                                                                                     |
+|    Shared (Non contrattuale)     | S1 = _Condiviso per il coordinamento_ limitato per i compiti di coordinamento. Utilizzato per portare avanti i risultati specifici di un'area. Non deve essere solo per i disegni. Può essere usato per qualsiasi tipo di documentazione.                  |
+|                                  | S2 = _Condiviso per le informazioni_ assegnate ai documenti che devono servire come input per altri task. Es. Fotografie del sito.                                                                                                                         |
+|                                  | S3 = _Condivisione per la revisione_ e i commenti assegnati ai documenti che devono essere rivisti e commentati dai loro destinatari, rispetto ai requisiti del cliente/progetto.                                                                          |
+|                                  | S4= _Condiviso per l'approvazione_, assegnato ai documenti che devono essere approvati dai loro destinatari. Lo stato successivo a questo dovrebbe essere il documento di accettazione che verifica che sia conforme ai requisiti del Proponente/Progetto. |
+|                                  | S5 = Condiviso per l'Approvazione del PIM                                                                                                                                                                                                                  |
+|                                  | S6 = Condiviso per l'Autorizzazione AIM                                                                                                                                                                                                                    |
+|     Published (Contrattuale)     | A1, ..., An = Approvato                                                                                                                                                                                                                                    |
+|                                  | B1, ..., Bn = Parzialmente approvato – Approvato con commenti                                                                                                                                                                                              |
+|                                  | C1, ..., Cn = Rifiutato, assegnato dal Soggetto Proponente / Incaricato Principale per restituire il contenitore di informazioni perché non è conforme ai requisiti                                                                                        |
+| Published (Per accettazione AIM) | AB = As-built (come costruito)                                                                                                                                                                                                                             |
+
+**Codice Revisione.** Definisce la versione del documento che identifica, in relazione al documento che sostituisce, così che un codice di revisione più alto indica l'ultima revisione del documento iniziale. Questo campo assicura la tracciabilità delle modifiche apportate al documento durante il ciclo di vita del bene.
+
+Il numero di revisione è identificato da 2 coppie di cifre in modo che le prime due cifre corrispondano alla "versione maggiore" e le ultime due alla "versione minore". Il cambiamento di "versione maggiore" implica una modifica sostanziale del documento che viene modificato. Il cambiamento di "versione minore" comporta cambiamenti minori al documento modificato, come la formattazione, l'ortografia nel caso di testi, o cambiamenti stilistici. Il codice di revisione 00 corrisponde al documento iniziale. I codici di revisione cresceranno in sequenza con ogni revisione.
+
+- _Livello del requisito:_ opzionale o metadato.
+- _Lunghezza:_ 4 caratteri numerici (es. 0102, 0201, ...).
+- _Suggerimento:_ si raccomanda di usare questo campo come metadato se si usa una soluzione tecnologica CDE che lo permette.
 
 ### 2.1.2 Dimensione massima dei file di modellazione<a name="212-dimensione-massima-dei-file-di-modellazione"></a>
 
